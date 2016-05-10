@@ -1,15 +1,13 @@
 <!doctype html>
 <html>
 <head>
-	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
 	<meta charset="uft-8" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<title><?php wp_title(''); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
-	<link rel="stylesheet" href="/wp-content/themes/danielrevelry/css/flexslider.css" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script src="/wp-content/themes/danielrevelry/js/jquery.flexslider.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
 </head>
 <body>
 

@@ -13,6 +13,7 @@ get_header();
     	<div class="title">
             COVERS
         </div>
+        <!--
         <div id="mainPlayer">
 			<div id="playerContainer">
 		        <div class="player gradient">
@@ -59,6 +60,7 @@ get_header();
 		        </div>
             </div>
 		</div>
+	-->
 
     	<div id="text">
     		<?php 
@@ -72,15 +74,18 @@ get_header();
 		</div>
 		<br>
 		<div class="videos">
-			<iframe width="480" height="315" src="https://www.youtube.com/embed/Rc7xNrmBGsg" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<br>
-		<div class="videos">
-			<iframe width="480" height="315" src="https://www.youtube.com/embed/CK_xHAKSId4" frameborder="0" allowfullscreen></iframe>
+			<iframe width="480" height="315" src="https://www.youtube.com/embed/ijqKuPQcFnM" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class="videos">
-			<iframe width="480" height="315" src="https://www.youtube.com/embed/H7lLKHZ1GcQ" frameborder="0" allowfullscreen></iframe>
+			<iframe width="480" height="315" src="https://www.youtube.com/embed/n2QkJl4fBBE" frameborder="0" allowfullscreen></iframe>
 		</div>
+		<div class="videos">
+			<iframe width="480" height="315" src="https://www.youtube.com/embed/5zgmqd2eDJY" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="videos">
+			<iframe width="480" height="315" src="https://www.youtube.com/embed/LhgWPdu5auA" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
 		<br>
     </div>
 

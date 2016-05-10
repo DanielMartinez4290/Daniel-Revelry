@@ -13,16 +13,17 @@ get_header();
     	<div class="title">
             ORIGINALS
         </div>
+<!--
     	<div id="mainPlayer">
 			<div id="playerContainer">
 		        <div class="player gradient">
 		        	<div id="playerTop" class="cf">
 			        	<div id="playerPicture">
 			        		<div id="playerPictureOne">
-				        		<img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/songwriter.jpg') ?>"  width="170" />
+				        		<img src="<?php //echo home_url('/wp-content/themes/danielrevelry/img/songwriter.jpg') ?>"  width="170" />
 				        	</div>
 				        	<div id="playerPictureTwo">
-				        		<img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/batman.jpg') ?>"  width="170" />
+				        		<img src="<?php //echo home_url('/wp-content/themes/danielrevelry/img/batman.jpg') ?>"  width="170" />
 				        	</div>
 				        </div>
 				        <div id="playerSongTitle">
@@ -59,7 +60,12 @@ get_header();
 		        </div>
             </div>
 		</div>
-    	
+	-->
+	</br>
+	<div class="videos">
+		<iframe width="485" height="315" src="https://www.youtube.com/embed/HMDSx657oTU" frameborder="0" allowfullscreen></iframe>
+    	<iframe width="485" height="315" src="https://www.youtube.com/embed/139gnI0-_8g" frameborder="0" allowfullscreen></iframe>
+    </div>
     </div>
 
 	

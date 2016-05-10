@@ -4,7 +4,7 @@
 			<img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/SidebarFeaturedVideoHeader.png') ?>" />
 		</div>
 		<div id="sidebarFeaturedVideoVideo">
-			<iframe width="270" height="190" src="https://www.youtube.com/embed/HuK7Uq5tWfI" frameborder="0" allowfullscreen></iframe>
+			<iframe width="270" height="190" src="https://www.youtube.com/embed/ijqKuPQcFnM" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 	

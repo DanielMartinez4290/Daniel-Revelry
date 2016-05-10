@@ -32,3 +32,7 @@ get_header();
 <div id="pageSidebar">
 <?php  get_sidebar(); ?>
 </div>
+</div>
+<?php 
+	get_footer(); 
+?> 

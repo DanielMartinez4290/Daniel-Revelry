@@ -24,6 +24,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 body{
 	margin:0;
+	background-image:url('/wp-content/themes/danielrevelry/img/background.jpg') !important;
 }
 @font-face{
 	font-family:'wolffont';
@@ -43,13 +44,14 @@ html{
 	height:60px;
 	width:965px;
 	margin:0 auto;	
-	background-image:url('http://danielrevelry.com/wp-content/uploads/2015/12/HeaderBackgroundAssembled.png');
+	background-image:url('/wp-content/themes/danielrevelry/img/HeaderBackgroundAssembled.png');
 }
 #footer{
 	height:93px;
 	width:965px;
 	margin:0 auto;	
-	background-image:url('http://danielrevelry.com/wp-content/uploads/2015/12/HeaderBackgroundAssembled.png');
+	background-image:url('/wp-content/themes/danielrevelry/img/HeaderBackgroundAssembled.png');
+	background-repeat:no-repeat;
 }
 .title{
 	margin-left:36px;
@@ -61,8 +63,7 @@ html{
 #HeaderDanielRevelry{
 	float:left;
 	width:33%;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 2px;
 	height:55px;
 }
 #footerDanielRevelry{
@@ -79,7 +80,6 @@ html{
 #HeaderDanielRevelry a{
 	text-decoration: none;
 	color:black;	
-	font-size: 59px;
 }
 #headernav, #footerNav{
 	margin-left: 14%;
@@ -87,12 +87,12 @@ html{
 	width:53%;
 	height:44px;
 	float:left;
-	background-image:url('/wp-content/themes/danielrevelry/img/MenuBarBackground.png');
 }
 #headernav ul{
 	float:left;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-left:46px;
 }
 .headerHome{
 	height:26px;
@@ -133,6 +133,7 @@ html{
 }
 #main{
 	min-height:805px;
+	height:auto;
 	width:961px;
 	margin:0 auto;
 	background-color: rgba(255,255,255,0.7);
@@ -165,7 +166,7 @@ html{
 	width:30%;
 }
 .flexslider {
-    width: 953px;
+    width: 959px;
     border:4px solid black !important;
     background-color: black !important;
     opacity:1;
@@ -174,7 +175,7 @@ html{
 }
 
 .flexslider .slides img {
-    width: 965px;
+    width: 950px;
     min-height: 560px;
 }
 #originalmusicplayer{
@@ -195,6 +196,7 @@ html{
 #footerNav ul{
 	float:left;
 	margin:0;
+	padding-left:46px;
 }
 #footerNav ul li{
 	display:inline-block ;
@@ -365,7 +367,7 @@ html{
 	margin-top: 10px;
 	margin-left: 33px;
 }
-.coversPage .videos{
+.videos{
 	text-align: center;
 }
 .contactPage #contactPicture{

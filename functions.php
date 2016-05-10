@@ -2,6 +2,15 @@
 
 function danielrevelry_enqueue_scripts() {
     wp_enqueue_script( 'jquery' );
+
+    wp_register_script( 'flexslider_js', get_template_directory_uri() . '/js/jquery.flexslider.js');    
+    wp_enqueue_script( 'flexslider_js', get_template_directory_uri() .'/js/jquery.flexslider.js',array('jquery'));  
+
+    wp_register_script( 'flex_js', get_template_directory_uri() .'/js/flex.js');    
+    wp_enqueue_script( 'flex_js', get_template_directory_uri() .'/js/flex.js',array('jquery'));
+
+    wp_enqueue_style( 'flexslider_style',  get_template_directory_uri() .'/css/flexslider.css' );
+    wp_enqueue_style( 'bootstrap',  get_template_directory_uri() .'/css/bootstrap.min.css' );
 }
 
 add_action( 'init', 'danielrevelry_enqueue_scripts' );
