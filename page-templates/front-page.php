@@ -5,96 +5,76 @@
 get_header(); 
 
 ?>
-<div id="main" class="backgroundbrown">
-	<span id="mainpic">
-		<div class="flexslider">
-		  <ul class="slides">
-		    <li>
-		      <img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/banner.jpg') ?>"  />
-		    </li>
-		    <li>
-		     <img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/firepromo.jpg') ?>"  />
-		    </li>
-		  </ul>
-		</div>
-	</span>
 
+  <div class="row">
+    <div class="col-xs-12" id="mainPic">
+    
+     
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/banner.jpg') ?>"  />
+              </li>
+            </ul>
 
+          </div>
+        </div>
+     
+  </div>
 
-	<div id="mainContent" class="cf">
-		<div id="mainLeft">
-			<div id="mainVideo1">
-				<iframe width="480" height="249" src="https://www.youtube.com/embed/ijqKuPQcFnM" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<br>
-			<div id="mainVideo2">
-				<iframe width="480" height="249" src="https://www.youtube.com/embed/HMDSx657oTU" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<br>
-			<!--
-			<div id="mainPlayer">
-				<div id="playerContainer">
-			        <div class="player gradient">
-			        	<div id="playerTop" class="cf">
-				        	<div id="playerPicture">
-				        		<div id="playerPictureOne">
-					        		<img src="<?php //echo home_url('/wp-content/themes/danielrevelry/img/songwriter.jpg') ?>"  width="170" />
-					        	</div>
-					        	<div id="playerPictureTwo">
-					        		<img src="http://ecx.images-amazon.com/images/I/91Hhn%2BzOKKL._SL1425_.jpg"  width="170" />
-					        	</div>
-					        </div>
-					        <div id="playerSongTitle">
-					        	<div id="titleOne">
-					        		Fire
-					        	</div>
-					        	<div id="titleTwo">
-					        		Bright Lights
-					        	</div>
-					        </div>
-					        <br><br><br>
-					        <div id="playerArtist">
-					        	<div id="artistOne">
-					        		By Daniel Revelry
-					        	</div>
-					        	<div id="artistTwo">
-					        		By Gary Clark Jr
-					        	</div>
-					        </div>
-					        <br><br><br>
-					        <div id="playerPlayButton">
-					        	<a class="button gradient playButton" id="play1" href="" title=""><i class="fa fa-play fa-2x"></i></a>
-					    	</div>
-					    	<div id="playerSeek">
-					    		<input type="range" id="seek" value="0" max=""/>		
-					    	</div>
-				    	</div>
-				    	<div id="playerBot">
-		    				<a class="button gradient playerSong" id="song1" href="" title=""><span class="playerSongTitle">1. Fire - Daniel Revelry</span><span class="playerSongLength"> 4:45</span></a>
-		    				<a class="button gradient playerSong" id="song2" href="" title=""><span class="playerSongTitle">2. Bright Lights - Gary Clark Jr</span><span class="playerSongLength"> 4:15</span></a>	
-				    	</div>
-			            
-			            
-			        </div>
+  <div class="row homeContent">
 
-	            </div>
-	            
-			</div>
-			-->
-		</div>
+    <div class="col-xs-12">
+      <div id="mainVideo1" class="col-sm-6">
+        <div class="originalsHeader">Originals</div>
+        <iframe height="370" src="https://www.youtube.com/embed/HMDSx657oTU" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div id="mainVideo2" class="col-sm-6">
+        <div class="coversHeader">Covers</div>
+        <iframe height="370" src="https://www.youtube.com/embed/AnoQn_EzZXI" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
 
-		<div id="mainSidebar" class="cf">
-			<?php  get_sidebar('main'); ?>
-		</div>
-
-	</div>
-	<br>
-	<br>
-	<br>
-	
+    <div class="col-xs-12">
+      <div id="sidebarContent" class="cf">
+  <div id="sidebarFeaturedVideo" class="col-sm-6">
+    <div class="featuredVideoHeader">Featured Video</div>
+    <div id="sidebarFeaturedVideoVideo">
+      <iframe height="370" src="https://www.youtube.com/embed/n2QkJl4fBBE" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <div id="sidebarFacebookPage" class="col-sm-6">
+    <div class="featuredVideoHeader">Facebook Page</div>
+    <div id="sidebarFacebookPicture">
+      <a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/batman.jpg') ?>" /></a>
+    </div>
+  </div>
+  <!--
+  <div id="sidebarUpcomingShows">
+    
+    <div class="upcomingShowsHeader">Upcoming Shows</div>
+    <div id="sidebarUpcomingShowsShows">
+      <?php  //dynamic_sidebar('main'); ?>
+    </div>
+  </div>
+  
+  <div id="sidebarSocialIcons">
+    <a href="https://www.facebook.com/danielrevelry"><div id="sidebarSocialFB">
+        <i class="fa fa-facebook-official fa-2x"></i>
+      </div></a>
+      <a href="https://www.youtube.com/channel/UCRNhG3sbmr8DFltO2iFSVRQ"><div id="sidebarSocialYT">
+        <i class="fa fa-youtube fa-2x"></i>
+      </div></a>
+  </div>
+-->
 </div>
+    </div>
 
-<!-- <script src="/wp-content/themes/danielrevelry/js/homePlayer.js"></script> -->
+  </div>
+
+
+</div>
 
 <?php 
 

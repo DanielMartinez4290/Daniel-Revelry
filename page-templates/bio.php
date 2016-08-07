@@ -18,7 +18,7 @@ get_header();
 		</div>
 		<div id="bio">
 			Born and raised in Texas, I’ve been playing in the Austin music scene 
-			for the past 4 years. My biggest musical influences are Jimi Hendrix, 
+			for the past 5 years. My biggest musical influences are Jimi Hendrix, 
 			John Mayer, and Stevie Ray Vaughan.
 		</div>
 		<div id="gear">

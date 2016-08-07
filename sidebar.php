@@ -13,7 +13,7 @@
 			<img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/SidebarFacebookPageHeader.png') ?>" />
 		</div>
 		<div id="sidebarFacebookPicture">
-			<a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/renaissance.jpg') ?>"  width="270" /></a>
+			<a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/batman.jpg') ?>"  width="270" /></a>
 		</div>
 	</div>
 
