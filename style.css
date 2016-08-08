@@ -55,7 +55,7 @@ body{
 #headerDanielRevelry img{
 	width:100%;
 	max-width: 330px;
-	min-width: 200px;
+	min-width: 230px;
 }
 #mainVideo1, #mainVideo2,#sidebarFeaturedVideo,#sidebarFacebookPage,#sidebarUpcomingShows,#sidebarSocialIcons{
 	text-align: center;
@@ -109,10 +109,10 @@ body{
 	font-family: 'readyToRide';
 	font-size:39px;
 	line-height: 42px;
-	padding-top:9px;
 	background-color:#ebc9a4;
 	margin:auto;
 	width:370px;
+	height:46px;
 }
 .col-xs-12{
 	padding:0;
@@ -121,6 +121,36 @@ body{
 	border:solid 4px black;
 	padding-top:5px;
 	padding-bottom:15px;
+}
+.originalsText{
+  float:left;
+  margin-left:98px;
+  margin-right:98px;
+  padding-top:5px;
+}
+.coversText{
+  float:left;
+  margin-left:107px;
+  margin-right:107px;
+  padding-top:5px;
+}
+.featuredVideoText{
+  float:left;
+  margin-left:69px;
+  margin-right:68px;
+  padding-top:5px;
+}
+.facebookPageText{
+  float:left;
+  margin-left:67px;
+  margin-right:68px;
+  padding-top:5px;
+}
+.leftTriangle,.rightTriangle{
+	height:46px;
+	width:40px;
+	background-color: green;
+	float:left;
 }
 #footer{
    margin:auto;
@@ -134,9 +164,7 @@ body{
 	width:374px;
 	margin:auto;
 }
-.footerNav ul li{
-	float:left;
-}
+
 .footerLinks{
 	background-color:#ebc9a4;
 	height:34px;
@@ -148,6 +176,45 @@ body{
 	overflow:hidden;
 	line-height:41px;
 }
+.title{
+	margin-left:36px;
+	margin-top:24px;
+	font-size:34px;
+	font-family:'Open Sans Condensed',sans-serif;
+	font-weight:700;
+}
+#main{
+	min-height: 1225px;
+	background-image:url('/wp-content/themes/danielrevelry/img/MainContentBackground965.jpg');
+}
+#mainContainer{
+	width:100%;
+	min-height:390px;
+}
+#mainPicture{
+	background-image:url('/wp-content/themes/danielrevelry/img/bioPic.jpg');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin:auto;
+	height:300px;
+	width:230px;
+}
+#bio{
+	width:330px;
+	margin:auto;
+}
+.videos{
+	width:370px;
+	margin:auto;
+}
+.videos iframe{
+	width:100%;
+	height:320px;
+}
+.coversPageText{
+	margin:auto;
+	width:320px;
+}
 @media only screen and (min-width : 320px) {
 	
 }
@@ -158,9 +225,6 @@ body{
 	
 }
 @media only screen and (min-width : 768px) {
-	.headerInd{
-		margin-left:32px;
-	}
 
 	#headerDanielRevelry{
 		padding: 0;
@@ -173,12 +237,16 @@ body{
 		height:33px;
 		font-size:29px;
 		margin-top:13px;
+		margin-left:15px;
 	}
 	.footerLinks{
 		font-size:29px;
+		width:423px;
+		margin-left:15px;
 	}
 	.headerInd{
 		margin-left:0;
+		padding:0;
 	}
 	.originalsHeader, .coversHeader, .featuredVideoHeader, .facebookPageHeader, .upcomingShowsHeader{
 		width:344px;
@@ -189,18 +257,109 @@ body{
 	#footer{
 		width:750px;
 	}
+	.headerHome{
+		padding-left:11px;
+	}
+	.bioHome{
+		padding-left:20px;
+	}
+	.originalsHome{
+		padding-left:11px;
+	}
+	.coversHome{
+		padding-left:12px;
+	}
+	.acousticHome{
+		padding-left:25px;
+	}
+	.originalsText{
+	  margin-left:85px;
+	  margin-right:85px;
+	}
+	.coversText{
+	  margin-left:94px;
+	  margin-right:93px;
+	}
+	.featuredVideoText{
+	  margin-left:55px;
+	  margin-right:56px;
+	}
+	.facebookPageText{
+	  margin-left:55px;
+	  margin-right:54px;
+	}
+	#main{
+		min-height: 755px;
+	}
+	#bio{
+		width:340px;
+	}
+	.videos{
+		width:300px;
+	}
 	
 }
 
 @media only screen and (min-width : 992px) {
 	.headerLinks{
-		width:500px;
+		width:517px;
 		margin-left:46px;
+		font-size:34px;
+	}
+	.footerLinks{
+		width:517px;
+		margin-left:46px;
+		margin-top:13px;
+		font-size:34px;
 	}
 	.originalsHeader, .coversHeader, .featuredVideoHeader, .facebookPageHeader, .upcomingShowsHeader{
 		width:370px;
 	}
 	#footer{
 		width:965px;
+		height:60px;
 	}
+	.headerHome{
+		padding-left:21px;
+	}
+	.bioHome{
+		padding-left:30px;
+	}
+	.originalsHome{
+		padding-left:21px;
+	}
+	.coversHome{
+		padding-left:22px;
+	}
+	.acousticHome{
+		padding-left:35px;
+	}
+	.originalsText{
+	  margin-left:98px;
+	  margin-right:98px;
+	}
+	.coversText{
+	  margin-left:107px;
+	  margin-right:107px;
+	}
+	.featuredVideoText{
+	  margin-left:69px;
+	  margin-right:68px;
+	}
+	.facebookPageText{
+	  margin-left:67px;
+	  margin-right:68px;
+	}
+	#bio{
+		width:440px;
+	}
+	.videos{
+		width:480px;
+	}
+	.coversPageText{
+		margin-left:80px;
+		width:330px;
+	}
+	
+
 }

@@ -27,7 +27,7 @@ wp_footer();
 							<a href="bio"><li class="bioHome col-sm-2 col-md-2 footerInd" >Bio</li></a>
 							<a href="originals"><li class="originalsHome col-sm-3 col-md-3 footerInd" >Originals</li></a>
 							<a href="covers"><li class="coversHome col-sm-2 col-md-2 footerInd" >Covers</li></a>
-							<a href="contact"><li class="contactHome col-sm-3 col-md-3 footerInd" >Acoustic</li></a>
+							<a href="acoustic"><li class="acousticHome col-sm-3 col-md-3 footerInd" >Acoustic</li></a>
 						</div>
 	            </ul>
 	          

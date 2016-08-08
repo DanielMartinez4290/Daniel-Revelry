@@ -6,10 +6,8 @@ get_header();
 
 ?>
 <div id="main" class="backgroundbrown page">
-	<div id="fullSidebar" class="cf">
-        <?php  get_sidebar(); ?>
-    </div>
-    <div id="fullContent" class="originalsPage">
+
+	<div id="fullContent" class="originalsPage  col-xs-12 col-sm-8">
     	<div class="title">
             ORIGINALS
         </div>
@@ -63,10 +61,14 @@ get_header();
 	-->
 	</br>
 	<div class="videos">
-		<iframe width="485" height="315" src="https://www.youtube.com/embed/HMDSx657oTU" frameborder="0" allowfullscreen></iframe>
-    	<iframe width="485" height="315" src="https://www.youtube.com/embed/139gnI0-_8g" frameborder="0" allowfullscreen></iframe>
+		<iframe  src="https://www.youtube.com/embed/HMDSx657oTU" frameborder="0" allowfullscreen></iframe>
+    	<iframe  src="https://www.youtube.com/embed/139gnI0-_8g" frameborder="0" allowfullscreen></iframe>
     </div>
     </div>
+	<div id="fullSidebar" class="cf col-xs-12 col-sm-4">
+        <?php  get_sidebar(); ?>
+    </div>
+    
 
 	
 </div>

@@ -6,10 +6,8 @@ get_header();
 
 ?>
 <div id="main" class="backgroundbrown page">
-	<div id="fullSidebar" class="cf">
-        <?php  get_sidebar(); ?>
-    </div>
-    <div id="fullContent" class="coversPage">
+	
+    <div id="fullContent" class="coversPage col-xs-12 col-sm-8">
     	<div class="title">
             COVERS
         </div>
@@ -62,7 +60,7 @@ get_header();
 		</div>
 	-->
 
-    	<div id="text">
+    	<div class="coversPageText">
     		<?php 
 				if (have_posts()) :
 				   while (have_posts()) :
@@ -74,19 +72,23 @@ get_header();
 		</div>
 		<br>
 		<div class="videos">
-			<iframe width="480" height="315" src="https://www.youtube.com/embed/ijqKuPQcFnM" frameborder="0" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/AnoQn_EzZXI" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class="videos">
-			<iframe width="480" height="315" src="https://www.youtube.com/embed/n2QkJl4fBBE" frameborder="0" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/ijqKuPQcFnM" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class="videos">
-			<iframe width="480" height="315" src="https://www.youtube.com/embed/5zgmqd2eDJY" frameborder="0" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/n2QkJl4fBBE" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class="videos">
-			<iframe width="480" height="315" src="https://www.youtube.com/embed/LhgWPdu5auA" frameborder="0" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/hEtpes859F4" frameborder="0" allowfullscreen></iframe>
 		</div>
 		
 		<br>
+    </div>
+
+    <div id="fullSidebar" class="col-xs-12 col-sm-4">
+        <?php  get_sidebar(); ?>
     </div>
 
 	

@@ -26,11 +26,11 @@ get_header();
 
     <div class="col-xs-12">
       <div id="mainVideo1" class="col-sm-6">
-        <div class="originalsHeader">Originals</div>
+        <div class="originalsHeader"><div class="leftTriangle"></div><div class="originalsText">Originals</div><div class="rightTriangle"></div></div>
         <iframe height="370" src="https://www.youtube.com/embed/HMDSx657oTU" frameborder="0" allowfullscreen></iframe>
       </div>
       <div id="mainVideo2" class="col-sm-6">
-        <div class="coversHeader">Covers</div>
+        <div class="coversHeader"><div class="leftTriangle"></div><div class="coversText">Covers</div><div class="rightTriangle"></div></div>
         <iframe height="370" src="https://www.youtube.com/embed/AnoQn_EzZXI" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
@@ -38,14 +38,14 @@ get_header();
     <div class="col-xs-12">
       <div id="sidebarContent" class="cf">
   <div id="sidebarFeaturedVideo" class="col-sm-6">
-    <div class="featuredVideoHeader">Featured Video</div>
+    <div class="featuredVideoHeader"><div class="leftTriangle"></div><div class="featuredVideoText">Featured Video</div><div class="rightTriangle"></div></div>
     <div id="sidebarFeaturedVideoVideo">
       <iframe height="370" src="https://www.youtube.com/embed/n2QkJl4fBBE" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   
   <div id="sidebarFacebookPage" class="col-sm-6">
-    <div class="featuredVideoHeader">Facebook Page</div>
+    <div class="featuredVideoHeader"><div class="leftTriangle"></div><div class="facebookPageText">Facebook Page</div><div class="rightTriangle"></div></div>
     <div id="sidebarFacebookPicture">
       <a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/batman.jpg') ?>" /></a>
     </div>
