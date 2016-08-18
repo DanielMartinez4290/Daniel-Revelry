@@ -61,6 +61,7 @@ body{
 	text-align: center;
 	padding-top:10px;
 }
+
 #mainVideo1 iframe, #mainVideo2 iframe,#sidebarFeaturedVideoVideo iframe, #sidebarFacebookPicture img{
 	max-width: 370px;
 	width:100%;
@@ -76,25 +77,26 @@ body{
 }
 .headerInd{
 	color:black;
-	margin-left:32px;
+	margin-left:4px;
 }
 .footerInd{
 	color:black;
-	margin-left:0px;
+	margin-left:4px;
 }
 .headerLinks{
 	background-color:#ebc9a4;
-	height:194px;
 	font-family: 'readyToRide';
-	font-size:34px;
+	font-size:24px;
 	font-weight:700;
-	margin-top:4px;
+	margin-top:12px;
 	width:100%;
 	overflow:hidden;
-	line-height:41px;
+	line-height:34px;
+	padding-top:4px;
 }
 #headerLogo{
 	padding:0;
+	display:none;
 }
 .navbar-header{
 	padding-left:10px;
@@ -149,32 +151,32 @@ body{
 .leftTriangle,.rightTriangle{
 	height:46px;
 	width:40px;
-	background-color: green;
+	background-color: transparent;
 	float:left;
 }
 #footer{
    margin:auto;
    background-color:#bd9265;
+   height:60px;
+
 
 }
 .footerBrand{
 	display:none;
 }
-#footer{
-	width:374px;
-	margin:auto;
+#navBar ul li{
+	float:left;
 }
-
 .footerLinks{
 	background-color:#ebc9a4;
-	height:34px;
 	font-family: 'readyToRide';
 	font-size:24px;
 	font-weight:700;
-	margin-top:7px;
+	margin-top:12px;
 	width:100%;
 	overflow:hidden;
-	line-height:41px;
+	line-height:34px;
+	padding-top:4px;
 }
 .title{
 	margin-left:36px;
@@ -184,7 +186,9 @@ body{
 	font-weight:700;
 }
 #main{
-	min-height: 1225px;
+	min-height: 1375px;
+	height:auto;
+	clear:both;
 	background-image:url('/wp-content/themes/danielrevelry/img/MainContentBackground965.jpg');
 }
 #mainContainer{
@@ -213,7 +217,36 @@ body{
 }
 .coversPageText{
 	margin:auto;
-	width:320px;
+	width:330px;
+}
+
+.sidebarText{
+	background-color:#ebc9a4;
+	font-family:'readyToRide';
+	font-size:36px;
+	line-height: 30px;
+	padding-top:10px;
+	width:373px;
+	margin:auto;
+}
+#sidebarUpcomingShowsShows{
+	background-color:#bd9265;
+	width:373px;
+	margin:auto;
+}
+#sidebarSocialFB{
+	float:left;
+	color:black;
+}
+#sidebarSocialYT{
+	float:left;
+	margin-left:44px;
+	color:black;
+}
+#sidebarSocialIcons{
+	height:40px;
+	width:100px;
+	margin:auto;
 }
 @media only screen and (min-width : 320px) {
 	
@@ -222,10 +255,26 @@ body{
 	#headerDanielRevelry{
 		padding-top:2px;
 	}
+
 	
 }
 @media only screen and (min-width : 768px) {
+	#sidebarSocialYT{
+		margin-left:4px;
+	}
+	#sidebarSocialIcons{
+		margin:0;
+	}
+	.sidebarText, #sidebarUpcomingShowsShows{
+		width:100%;
+	}
+	.footerInd{
+		margin-left:0;
+	}
 
+	#headerLogo{
+		display:block;
+	}
 	#headerDanielRevelry{
 		padding: 0;
 	}
@@ -289,7 +338,7 @@ body{
 	  margin-right:54px;
 	}
 	#main{
-		min-height: 755px;
+		min-height: 905px;
 	}
 	#bio{
 		width:340px;
@@ -339,7 +388,7 @@ body{
 	  margin-right:98px;
 	}
 	.coversText{
-	  margin-left:107px;
+	  margin-left:104px;
 	  margin-right:107px;
 	}
 	.featuredVideoText{
@@ -363,3 +412,35 @@ body{
 	
 
 }
+@media screen and (max-device-width: 480px){
+  .originalsHeader, .coversHeader, .featuredVideoHeader, .facebookPageHeader, .upcomingShowsHeader{
+  		width:335px;
+  }
+  .originalsText{
+  	margin-left:78px;
+  	margin-right:80px;
+  }
+  .coversText{
+  	margin-left:93px;
+  	margin-right:85px;
+  }
+  .featuredVideoText{
+  	margin-left:39px;
+  	margin-right:38px;
+  }
+  .facebookPageText{
+  	margin-left:42px;
+  	margin-right:43px;
+  }
+  
+  .headerLinks,.footerLinks{
+  	font-size:25px;
+  }
+  .headerInd,.footerInd{
+  	margin-left:0;
+  	padding-right:0;
+  	padding-left:13px;
+  }
+
+}
+

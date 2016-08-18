@@ -6,7 +6,7 @@ get_header();
 
 ?>
 <div id="main" class="backgroundbrown page">
-	
+	<div class="row">
     <div id="fullContent" class="coversPage col-xs-12 col-sm-8">
     	<div class="title">
             COVERS
@@ -90,7 +90,7 @@ get_header();
     <div id="fullSidebar" class="col-xs-12 col-sm-4">
         <?php  get_sidebar(); ?>
     </div>
-
+</div>
 	
 </div>
 <script src="/wp-content/themes/danielrevelry/js/coversPlayer.js"></script>
