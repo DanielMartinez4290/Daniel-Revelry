@@ -1,0 +1,1 @@
+This is the code for my personal music site danielrevelry.com. It was built on WordPress and is fully responsive. 
