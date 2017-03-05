@@ -17,7 +17,7 @@ html{
 	margin-top: 0 !important;
 }
 body{
-	background-image:url('/wp-content/themes/danielrevelry/img/background.jpg') !important;
+	background-image:url('/wp-content/themes/danielrevelry/img/background-compressor.jpg') !important;
 }
 @font-face {
     font-family: 'readyToRide';
@@ -28,7 +28,7 @@ body{
 	padding:0;
 }
 .homeContent{
-	background-image:url('/wp-content/themes/danielrevelry/img/MainContentBackground965.jpg');
+	background-image:url('/wp-content/themes/danielrevelry/img/MainContentBackground965-compressor.jpg');
 }
 .flexslider{
 	border:5px solid black;
@@ -71,10 +71,11 @@ body{
 	padding: 0;
 	border:0;
 }
-#header{
+header{
 	background-color:#bd9265;
 	height:59px;
 }
+
 .headerInd{
 	color:black;
 	margin-left:4px;
@@ -98,11 +99,17 @@ body{
 	padding:0;
 	display:none;
 }
+
 .navbar-header{
 	padding-left:10px;
 }
-#navBar{
+header #navBar{
 	padding:0;
+	position:fixed;
+	top:0;
+	z-index:1000;
+	background-color:#bd9265;
+	height:59px;
 }   
 .flexslider{
 	margin:0;
@@ -268,8 +275,13 @@ body{
 		left:310px;
 	}
 	
+	
 }
+/* Tablet Styles */
 @media only screen and (min-width : 768px) {
+	header #navBar{
+		position:static;
+	}   
 	#fbLikeButton{
 		left:165px;
 	}

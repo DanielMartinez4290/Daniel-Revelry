@@ -12,7 +12,7 @@ get_header();
           <div class="flexslider">
             <ul class="slides">
               <li>
-                <img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/banner.jpg') ?>"  />
+                <img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/banner-compressor.jpg') ?>"  />
               </li>
             </ul>
 
@@ -48,7 +48,7 @@ get_header();
     <div class="featuredVideoHeader"><div class="leftTriangle"></div><div class="facebookPageText">Facebook Page</div><div class="rightTriangle"></div></div>
     <div id="sidebarFacebookPicture">
       <div class="fb-like" id="fbLikeButton" data-href="https://www.facebook.com/danielrevelry/" data-width="20px" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false" colorscheme="dark"></div>
-      <a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/profile-pic.jpg') ?>" /></a>
+      <a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/profile-pic-compressor.jpg') ?>" /></a>
     </div>
   </div>
   <!--

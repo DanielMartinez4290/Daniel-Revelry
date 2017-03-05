@@ -13,7 +13,7 @@
 
 <div class="container">
   
-  <div class="row" id="header">
+  <header class="row">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           
@@ -21,7 +21,7 @@
 	          <div class="navbar-header">
 	          	
 	        	<div class="col-xs-7 col-sm-12">
-	            	<a class="navbar-brand" href="/" id="headerDanielRevelry"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/DanielRevelryLogo.png') ?>" /></a>
+	            	<a class="navbar-brand" href="/" id="headerDanielRevelry"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/DanielRevelryLogo-compressor.png') ?>" /></a>
 	        	</div>
 	        	
 	          </div>
@@ -42,4 +42,21 @@
 	        </div>
     </div>
     </nav>
-  </div>
+  </header>
+
+   <script type="text/javascript">
+   
+   jQuery(document).ready(function($){  
+   	/*
+	  $(document).scroll(function() {
+            if ($(this).scrollTop() == 0) {
+                $(".headerLinks").slideUp(400);
+            } else {
+                $(".headerLinks").slideDown(600);
+            }
+
+        });	
+*/
+
+	});
+    </script>
