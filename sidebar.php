@@ -9,7 +9,7 @@
 	<div id="sidebarFacebookPage">
 		<div id="sidebarFacebookText" class="sidebarText">Facebook Page</div>
 		<div id="sidebarFacebookPicture">
-			<a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/batman.jpg') ?>"  width="270" /></a>
+			<a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/profile-pic.jpg') ?>"  width="270" /></a>
 		</div>
 	</div>
 

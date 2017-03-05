@@ -86,13 +86,13 @@ body{
 .headerLinks{
 	background-color:#ebc9a4;
 	font-family: 'readyToRide';
-	font-size:24px;
 	font-weight:700;
 	margin-top:12px;
 	width:100%;
 	overflow:hidden;
-	line-height:34px;
-	padding-top:4px;
+	font-size:32px;
+	line-height:30px;
+	padding-top:7px;
 }
 #headerLogo{
 	padding:0;
@@ -170,13 +170,14 @@ body{
 .footerLinks{
 	background-color:#ebc9a4;
 	font-family: 'readyToRide';
-	font-size:24px;
 	font-weight:700;
 	margin-top:12px;
 	width:100%;
 	overflow:hidden;
-	line-height:34px;
-	padding-top:4px;
+	font-size:32px;
+	line-height:30px;
+	padding-top:7px;
+	
 }
 .title{
 	margin-left:36px;
@@ -248,17 +249,30 @@ body{
 	width:100px;
 	margin:auto;
 }
+#fbLikeButton{
+	position:absolute;
+	top:200px;
+	left:200px;
+}
 @media only screen and (min-width : 320px) {
+	.headerLinks, .footerLinks{
+		font-size:26px;
+	}
 	
 }
 @media only screen and (min-width : 480px) {
 	#headerDanielRevelry{
 		padding-top:2px;
 	}
-
+	#fbLikeButton{
+		left:310px;
+	}
 	
 }
 @media only screen and (min-width : 768px) {
+	#fbLikeButton{
+		left:165px;
+	}
 	#sidebarSocialYT{
 		margin-left:4px;
 	}
@@ -350,16 +364,16 @@ body{
 }
 
 @media only screen and (min-width : 992px) {
-	.headerLinks{
-		width:517px;
-		margin-left:46px;
+	#fbLikeButton{
+		left:220px;
+	}
+	.headerLinks,.footerLinks{
+		width:477px;
+		margin-left:86px;
 		font-size:34px;
 	}
 	.footerLinks{
-		width:517px;
-		margin-left:46px;
 		margin-top:13px;
-		font-size:34px;
 	}
 	.originalsHeader, .coversHeader, .featuredVideoHeader, .facebookPageHeader, .upcomingShowsHeader{
 		width:370px;
@@ -434,13 +448,18 @@ body{
   }
   
   .headerLinks,.footerLinks{
-  	font-size:25px;
+  	font-size:31px !important;
   }
   .headerInd,.footerInd{
   	margin-left:0;
   	padding-right:0;
-  	padding-left:13px;
+  	padding-left:9px;
+  }
+  #fbLikeButton{
+	/*left:146px; */
+	display:none;
   }
 
 }
 
+	

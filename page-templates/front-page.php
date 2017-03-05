@@ -5,7 +5,6 @@
 get_header(); 
 
 ?>
-
   <div class="row">
     <div class="col-xs-12" id="mainPic">
     
@@ -45,9 +44,11 @@ get_header();
   </div>
   
   <div id="sidebarFacebookPage" class="col-sm-6">
+      <!--<div id="fb-root"></div> -->
     <div class="featuredVideoHeader"><div class="leftTriangle"></div><div class="facebookPageText">Facebook Page</div><div class="rightTriangle"></div></div>
     <div id="sidebarFacebookPicture">
-      <a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/batman.jpg') ?>" /></a>
+      <div class="fb-like" id="fbLikeButton" data-href="https://www.facebook.com/danielrevelry/" data-width="20px" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false" colorscheme="dark"></div>
+      <a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/profile-pic.jpg') ?>" /></a>
     </div>
   </div>
   <!--
@@ -75,6 +76,13 @@ get_header();
 
 
 </div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=176796222526551";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
 <?php 
 

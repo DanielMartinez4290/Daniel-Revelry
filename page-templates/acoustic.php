@@ -21,6 +21,7 @@ get_header();
 				   endwhile;
 				endif;
 			?>
+			<a target="_blank" href="/acoustic-pdf">Printer Friendly Version</a>
 		</div>
 		<br>
 		<div class="videos">

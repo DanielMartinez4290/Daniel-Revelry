@@ -2,6 +2,7 @@
 /**
  * Template Name: Covers Page
  */
+ ob_start();
 get_header(); 
 
 ?>
@@ -9,7 +10,7 @@ get_header();
 	<div class="row">
     <div id="fullContent" class="coversPage col-xs-12 col-sm-8">
     	<div class="title">
-            COVERS
+            Trio Set List
         </div>
         <!--
         <div id="mainPlayer">
@@ -65,10 +66,15 @@ get_header();
 				if (have_posts()) :
 				   while (have_posts()) :
 				      the_post();
+
 				         the_content();
+				        
 				   endwhile;
 				endif;
 			?>
+
+			<a target="_blank" href="/trio-pdf">Printer Friendly Version</a>
+			
 		</div>
 		<br>
 		<div class="videos">
