@@ -26,7 +26,7 @@ $mpdf = new mPDF();
 	13.) Your Body Is A Wonderland – John Mayer<br>
 	14.) Yellow Ledbetter – Pearl Jam<br>
 	15.) Ho Hey – The Lumineers<br>
-	16.) Gypsy Soul - Daniel Revelry
+	16.) Gypsy Soul - Daniel Revelry<br>
 	17.) Basketcase – Green Day<br>
 	18.) She Will Be Loved – Maroon 5<br>
 	19.) Pride and Joy – Stevie Ray Vaughan<br>

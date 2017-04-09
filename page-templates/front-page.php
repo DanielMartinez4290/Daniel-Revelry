@@ -26,7 +26,7 @@ get_header();
     <div class="col-xs-12">
       <div id="mainVideo1" class="col-sm-6">
         <div class="originalsHeader"><div class="leftTriangle"></div><div class="originalsText">Originals</div><div class="rightTriangle"></div></div>
-        <iframe height="370" src="https://www.youtube.com/embed/HMDSx657oTU" frameborder="0" allowfullscreen></iframe>
+        <iframe height="370" src="https://www.youtube.com/embed/iYN70Gygvcw" frameborder="0" allowfullscreen></iframe>
       </div>
       <div id="mainVideo2" class="col-sm-6">
         <div class="coversHeader"><div class="leftTriangle"></div><div class="coversText">Covers</div><div class="rightTriangle"></div></div>
@@ -39,7 +39,7 @@ get_header();
   <div id="sidebarFeaturedVideo" class="col-sm-6">
     <div class="featuredVideoHeader"><div class="leftTriangle"></div><div class="featuredVideoText">Featured Video</div><div class="rightTriangle"></div></div>
     <div id="sidebarFeaturedVideoVideo">
-      <iframe height="370" src="https://www.youtube.com/embed/n2QkJl4fBBE" frameborder="0" allowfullscreen></iframe>
+      <iframe height="370" src="https://www.youtube.com/embed/ijqKuPQcFnM" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   

@@ -6,27 +6,25 @@ get_header();
 
 ?>
 
-<div id="main" class="backgroundbrown page">
-    <div id="fullSidebar" class="cf">
-        <?php  get_sidebar(); ?>
-    </div>
-    <div id="fullContent">
+<div id="main" class="backgroundbrown page container">
+    
+    <div class="fullContent col-xs-12 col-sm-8">
 
         <div class="title">
             Gypsy Soul
         </div>
         <br>
-        <div id="fireVideo">
-            <iframe width="481" height="315" src="https://www.youtube.com/embed/HMDSx657oTU" frameborder="0" allowfullscreen></iframe>
+        <div class="originalVideo">
+            <iframe height="315" width="100%" src="https://www.youtube.com/embed/iYN70Gygvcw" frameborder="0" allowfullscreen></iframe>
         </div>
     	
-    	<div id="fireLyrics">
-    		<span id="fireTitle">"Gypsy Soul"</span> <span id="fireByDaniel">by Daniel Revelry</span><br><br>
+    	<div class="originalLyrics">
+    		<span class="originalTitle">"Gypsy Soul"</span> <span id="fireByDaniel">by Daniel Revelry</span><br><br>
     		<div id="fireWords">
     			She’s got a lightnin’ smile and legs so smooth<br>
                 She’ll go all night when you’ve got the blues<br>
                 She’s got lips so sweet you won't have a prayer<br>
-                She’ll make you sweat with her firey stare<br>
+                Burn so good, it aint even fair<br>
                 <br>
                 She’s so Rock N Roll<br>
                 Ooo that girl’s got a Gypsy Soul<br>
@@ -49,6 +47,9 @@ get_header();
                 She's so Rock N Roll, but she’s got a Gypsy Soul<br><br><br>
     		</div>
     	</div>
+    </div>
+    <div class="cf fullSidebar col-xs-12 col-sm-4">
+        <?php  get_sidebar(); ?>
     </div>
 </div>
 

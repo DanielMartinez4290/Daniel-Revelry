@@ -61,8 +61,9 @@ get_header();
 	-->
 	</br>
 	<div class="videos">
-		<iframe  src="https://www.youtube.com/embed/HMDSx657oTU" frameborder="0" allowfullscreen></iframe>
+		<iframe  src="https://www.youtube.com/embed/iYN70Gygvcw" frameborder="0" allowfullscreen></iframe>
     	<iframe  src="https://www.youtube.com/embed/139gnI0-_8g" frameborder="0" allowfullscreen></iframe>
+    	
     </div>
     </div>
 	<div id="fullSidebar" class="cf col-xs-12 col-sm-4">
