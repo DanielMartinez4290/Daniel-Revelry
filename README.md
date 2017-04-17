@@ -1,1 +1,1 @@
-This is the code for my personal music site [danielrevelry.com](http://danielrevelry.com). It was built on WordPress and is fully responsive. It has editable options contained in the functions.php file.
+This is the code for my personal music site [danielrevelry.com](http://danielrevelry.com). It was built on WordPress and is fully responsive. It has editable options contained in the functions.php file.  This site includes a PDF generator for generating set lists on the fly. 
