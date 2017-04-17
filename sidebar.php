@@ -1,8 +1,11 @@
+<?php
+  $options = get_option( 'danielrevelry_options' ); 
+?>
 <div id="sidebarContent">
 	<div id="sidebarFeaturedVideo">
 		<div id="sidebarFeaturedVideoText" class="sidebarText">Featured Video</div>
 		<div id="sidebarFeaturedVideoVideo">
-			<iframe width="270" height="321" src="https://www.youtube.com/embed/ijqKuPQcFnM" frameborder="0" allowfullscreen></iframe>
+			<iframe width="270" height="321" src="<?= $options['voodoo_child_url']; ?>" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 	

@@ -25,12 +25,12 @@
 <div class="suggestedDonationSection">
 	SUGGESTED DONATION
 	<ul>
-		<li> $5 or FB like </li>
-		<li> facebook.com/danielrevelry </li>
+		<li> $5 or Facebook like </li>
+		<li> facebook.com/danielrevelrytrio </li>
 	</ul>
 </div>
 <footer>
-  danielrevelry.com
+  danielrevelry.com/trio
 </footer>
 
 <?php 

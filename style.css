@@ -59,13 +59,21 @@ body{
 }
 #mainVideo1, #mainVideo2,#sidebarFeaturedVideo,#sidebarFacebookPage,#sidebarUpcomingShows,#sidebarSocialIcons{
 	text-align: center;
-	padding-top:10px;
+	padding-top:14px;
+	padding-right:19px;
+	padding-left:19px;
 }
 
-#mainVideo1 iframe, #mainVideo2 iframe,#sidebarFeaturedVideoVideo iframe, #sidebarFacebookPicture img{
-	max-width: 370px;
+#mainVideo1 iframe, #mainVideo2 iframe,#sidebarFeaturedVideoVideo iframe{
 	width:100%;
 }
+#sidebarFeaturedVideoVideo iframe{
+		height:370px;
+}
+ #sidebarFacebookPicture img{
+ 	max-width: 406px;
+	width:100%;
+ }
 
 #bs-example-navbar-collapse-1, .container-fluid{
 	padding: 0;
@@ -76,9 +84,12 @@ header{
 	height:59px;
 }
 
-.headerInd{
+.headerInd a{
 	color:black;
 	margin-left:4px;
+}
+.headerInd a:hover{
+	text-decoration: none;
 }
 .footerInd{
 	color:black;
@@ -93,7 +104,17 @@ header{
 	overflow:hidden;
 	font-size:32px;
 	line-height:30px;
-	padding-top:7px;
+	padding-top:6px;
+}
+.headerLinks ul,.footerLinks ul {
+  list-style-type: none;
+}
+.headerLinks li,.footerLinks li {
+  display:inline-block;
+}
+.headerLinks .menu,.footerLinks .menu{
+	padding:0;
+
 }
 #headerLogo{
 	padding:0;
@@ -120,7 +141,6 @@ header #navBar{
 	line-height: 42px;
 	background-color:#ebc9a4;
 	margin:auto;
-	width:363px;
 	height:46px;
 }
 .col-xs-12{
@@ -131,31 +151,14 @@ header #navBar{
 	padding-top:5px;
 	padding-bottom:15px;
 }
-.originalsText{
+.originalsText,.coversText,.featuredVideoText,.facebookPageText{
   float:left;
-  margin-left:98px;
-  margin-right:98px;
   padding-top:5px;
-}
-.coversText{
-  float:left;
-  margin-left:107px;
-  margin-right:107px;
-  padding-top:5px;
-}
-.featuredVideoText{
-  float:left;
-  margin-left:69px;
-  margin-right:68px;
-  padding-top:5px;
-}
-.facebookPageText{
-  float:left;
-  margin-left:67px;
-  margin-right:68px;
-  padding-top:5px;
+  width:100%;
+  text-align: center;
 }
 .leftTriangle,.rightTriangle{
+	display:none;
 	height:46px;
 	width:35px;
 	background-color: transparent;
@@ -170,9 +173,6 @@ header #navBar{
 }
 .footerBrand{
 	display:none;
-}
-#navBar ul li{
-	float:left;
 }
 .footerLinks{
 	background-color:#ebc9a4;
@@ -234,12 +234,10 @@ header #navBar{
 	font-size:36px;
 	line-height: 30px;
 	padding-top:10px;
-	width:373px;
 	margin:auto;
 }
 #sidebarUpcomingShowsShows{
 	background-color:#bd9265;
-	width:373px;
 	margin:auto;
 }
 #sidebarSocialFB{
@@ -253,7 +251,7 @@ header #navBar{
 }
 #sidebarSocialIcons{
 	height:40px;
-	width:100px;
+	width:139px;
 	margin:auto;
 }
 #fbLikeButton{
@@ -279,9 +277,13 @@ header #navBar{
 	width:300px;
 	height:400px;
 }
+#sidebarUpcomingShowsShows{
+	padding-top:8px;
+	padding-bottom:8px;
+}
 @media only screen and (min-width : 320px) {
 	.headerLinks, .footerLinks{
-		font-size:26px;
+		font-size:25px;
 	}
 	
 }
@@ -297,6 +299,9 @@ header #navBar{
 }
 /* Tablet Styles */
 @media only screen and (min-width : 768px) {
+	#sidebarFeaturedVideoVideo iframe{
+		height:334px;
+	}
 	header #navBar{
 		position:static;
 	}   
@@ -339,10 +344,17 @@ header #navBar{
 	}
 	.headerInd{
 		margin-left:0;
-		padding:0;
+		padding-left:10px;
+		padding-right:0px;
+	}
+	.headerInd a{
+		margin-left:10px;
+	}
+	.bioHome{
+		padding-left:19px;
 	}
 	.originalsHeader, .coversHeader, .featuredVideoHeader, .facebookPageHeader, .upcomingShowsHeader{
-		width:344px;
+		width:100%;
 	}
 	.footerBrand{
 		display:block;
@@ -350,37 +362,7 @@ header #navBar{
 	#footer{
 		width:750px;
 	}
-	.headerHome{
-		padding-left:11px;
-	}
-	.bioHome{
-		padding-left:20px;
-	}
-	.originalsHome{
-		padding-left:11px;
-	}
-	.coversHome{
-		padding-left:12px;
-	}
-	.acousticHome{
-		padding-left:25px;
-	}
-	.originalsText{
-	  margin-left:85px;
-	  margin-right:85px;
-	}
-	.coversText{
-	  margin-left:94px;
-	  margin-right:93px;
-	}
-	.featuredVideoText{
-	  margin-left:55px;
-	  margin-right:56px;
-	}
-	.facebookPageText{
-	  margin-left:55px;
-	  margin-right:54px;
-	}
+	
 	#main{
 		min-height: 905px;
 	}
@@ -390,10 +372,20 @@ header #navBar{
 	.videos{
 		width:300px;
 	}
+
 	
 }
 
 @media only screen and (min-width : 992px) {
+	#sidebarFacebookPicture img{
+ 	  max-width: 400px;
+    }
+	#mainVideo1 iframe, #mainVideo2 iframe, #sidebarFeaturedVideoVideo iframe{
+		max-width: 400px;
+	}
+	#sidebarFeaturedVideoVideo iframe{
+		height:400px;
+   } 
 	#fbLikeButton{
 		left:220px;
 	}
@@ -406,42 +398,11 @@ header #navBar{
 		margin-top:13px;
 	}
 	.originalsHeader, .coversHeader, .featuredVideoHeader, .facebookPageHeader, .upcomingShowsHeader{
-		width:370px;
+		width:400px;
 	}
 	#footer{
 		width:965px;
 		height:60px;
-	}
-	.headerHome{
-		padding-left:21px;
-	}
-	.bioHome{
-		padding-left:30px;
-	}
-	.originalsHome{
-		padding-left:21px;
-	}
-	.coversHome{
-		padding-left:22px;
-	}
-	.acousticHome{
-		padding-left:35px;
-	}
-	.originalsText{
-	  margin-left:98px;
-	  margin-right:98px;
-	}
-	.coversText{
-	  margin-left:104px;
-	  margin-right:107px;
-	}
-	.featuredVideoText{
-	  margin-left:69px;
-	  margin-right:68px;
-	}
-	.facebookPageText{
-	  margin-left:67px;
-	  margin-right:68px;
 	}
 	#bio{
 		width:440px;
@@ -457,36 +418,13 @@ header #navBar{
 
 }
 @media screen and (max-device-width: 480px){
-  .originalsHeader, .coversHeader, .featuredVideoHeader, .facebookPageHeader, .upcomingShowsHeader{
-  		width:335px;
-  }
-  .originalsText{
-  	margin-left:78px;
-  	margin-right:80px;
-  }
-  .coversText{
-  	margin-left:93px;
-  	margin-right:85px;
-  }
-  .featuredVideoText{
-  	margin-left:39px;
-  	margin-right:38px;
-  }
-  .facebookPageText{
-  	margin-left:42px;
-  	margin-right:43px;
-  }
   
-  .headerLinks,.footerLinks{
-  	font-size:31px !important;
-  }
   .headerInd,.footerInd{
   	margin-left:0;
   	padding-right:0;
   	padding-left:9px;
   }
   #fbLikeButton{
-	/*left:146px; */
 	display:none;
   }
 

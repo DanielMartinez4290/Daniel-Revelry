@@ -77,17 +77,17 @@ get_header();
 			
 		</div>
 		<br>
+		<?php
+		  $options = get_option( 'danielrevelry_options' ); 
+		?>
 		<div class="videos">
-			<iframe src="https://www.youtube.com/embed/AnoQn_EzZXI" frameborder="0" allowfullscreen></iframe>
+			<iframe src="<?= $options['pride_and_joy_url']; ?>" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class="videos">
-			<iframe src="https://www.youtube.com/embed/ijqKuPQcFnM" frameborder="0" allowfullscreen></iframe>
+			<iframe src="<?= $options['voodoo_child_url']; ?>" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class="videos">
 			<iframe src="https://www.youtube.com/embed/n2QkJl4fBBE" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<div class="videos">
-			<iframe src="https://www.youtube.com/embed/hEtpes859F4" frameborder="0" allowfullscreen></iframe>
 		</div>
 		
 		<br>

@@ -17,25 +17,23 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           
-	      <div class="col-sm-5 col-md-5" id="headerLogo">
+	      <div class="col-sm-5" id="headerLogo">
 	          <div class="navbar-header">
 	          	
 	        	<div class="col-xs-7 col-sm-12">
-	            	<a class="navbar-brand" href="/" id="headerDanielRevelry"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/DanielRevelryLogo-compressor.png') ?>" /></a>
+	            	<a class="navbar-brand" href="/" id="headerDanielRevelry"><img src="<?= home_url('/wp-content/themes/danielrevelry/img/DanielRevelryLogo-compressor.png') ?>" /></a>
 	        	</div>
 	        	
 	          </div>
 	      </div>
 
-			<div class="col-xs-12 col-sm-7 col-md-7" id="navBar">          
+			<div class="col-xs-12 col-sm-7" id="navBar">          
 	                  
 	            <ul class="nav navbar-nav navbar-right col-sm-12">
 	            		<div class='headerLinks'>
-		              		<a href="home"><li class="headerHome col-sm-2 col-md-2 headerInd" >Home</li></a>
-							<a href="bio"><li class="bioHome col-sm-2 col-md-2 headerInd" >Bio</li></a>
-							<a href="originals"><li class="originalsHome col-sm-3 col-md-3 headerInd" >Originals</li></a>
-							<a href="trio"><li class="coversHome col-sm-2 col-md-2 headerInd" >Trio</li></a>
-							<a href="acoustic"><li class="acousticHome col-sm-3 col-md-3 headerInd" >Acoustic</li></a>
+	            			<?php 
+	            				wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header-menu' ) );
+	            			?>
 						</div>
 	            </ul>
 	          
@@ -47,16 +45,6 @@
    <script type="text/javascript">
    
    jQuery(document).ready(function($){  
-   	/*
-	  $(document).scroll(function() {
-            if ($(this).scrollTop() == 0) {
-                $(".headerLinks").slideUp(400);
-            } else {
-                $(".headerLinks").slideDown(600);
-            }
-
-        });	
-*/
-
+   	  
 	});
     </script>

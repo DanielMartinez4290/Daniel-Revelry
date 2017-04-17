@@ -14,8 +14,11 @@ get_header();
             Gypsy Soul
         </div>
         <br>
+        <?php
+          $options = get_option( 'danielrevelry_options' ); 
+        ?>
         <div class="originalVideo">
-            <iframe height="315" width="100%" src="https://www.youtube.com/embed/iYN70Gygvcw" frameborder="0" allowfullscreen></iframe>
+            <iframe height="315" width="100%" src="<?= $options['gypsy_soul_url']; ?>" frameborder="0" allowfullscreen></iframe>
         </div>
     	
     	<div class="originalLyrics">

@@ -20,17 +20,20 @@ get_header();
         </div>
      
   </div>
-
+<?php
+  $options = get_option( 'danielrevelry_options' ); 
+?>
   <div class="row homeContent">
 
     <div class="col-xs-12">
       <div id="mainVideo1" class="col-sm-6">
+        
         <div class="originalsHeader"><div class="leftTriangle"></div><div class="originalsText">Originals</div><div class="rightTriangle"></div></div>
-        <iframe height="370" src="https://www.youtube.com/embed/iYN70Gygvcw" frameborder="0" allowfullscreen></iframe>
+        <iframe height="370" src="<?= $options['gypsy_soul_url']; ?>" frameborder="0" allowfullscreen></iframe>
       </div>
       <div id="mainVideo2" class="col-sm-6">
         <div class="coversHeader"><div class="leftTriangle"></div><div class="coversText">Covers</div><div class="rightTriangle"></div></div>
-        <iframe height="370" src="https://www.youtube.com/embed/AnoQn_EzZXI" frameborder="0" allowfullscreen></iframe>
+        <iframe height="370" src="<?= $options['pride_and_joy_url']; ?>" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
@@ -39,7 +42,7 @@ get_header();
   <div id="sidebarFeaturedVideo" class="col-sm-6">
     <div class="featuredVideoHeader"><div class="leftTriangle"></div><div class="featuredVideoText">Featured Video</div><div class="rightTriangle"></div></div>
     <div id="sidebarFeaturedVideoVideo">
-      <iframe height="370" src="https://www.youtube.com/embed/ijqKuPQcFnM" frameborder="0" allowfullscreen></iframe>
+      <iframe src="<?= $options['voodoo_child_url']; ?>" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   

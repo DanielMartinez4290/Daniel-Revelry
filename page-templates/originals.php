@@ -61,7 +61,10 @@ get_header();
 	-->
 	</br>
 	<div class="videos">
-		<iframe  src="https://www.youtube.com/embed/iYN70Gygvcw" frameborder="0" allowfullscreen></iframe>
+		<?php
+		  $options = get_option( 'danielrevelry_options' ); 
+		?>
+		<iframe  src="<?= $options['gypsy_soul_url']; ?>" frameborder="0" allowfullscreen></iframe>
     	<iframe  src="https://www.youtube.com/embed/139gnI0-_8g" frameborder="0" allowfullscreen></iframe>
     	
     </div>
