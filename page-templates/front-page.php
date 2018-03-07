@@ -5,14 +5,16 @@
 get_header(); 
 
 ?>
+
   <div class="row">
     <div class="col-xs-12" id="mainPic">
-    
      
           <div class="flexslider">
             <ul class="slides">
               <li>
-                <img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/banner-compressor.jpg') ?>"  />
+                <!-- <img src="<?php //home_url('/wp-content/themes/danielrevelry/img/banner-compressor.jpg') ?>"  /> -->
+                <video id="homevideo" controls="controls" width="100%" height="76%" name="Video Name" src="/wp-content/themes/danielrevelry/img/cover1-video.mov" ></video>
+
               </li>
             </ul>
 
@@ -79,13 +81,36 @@ get_header();
 
 
 </div>
-<script>(function(d, s, id) {
+<script>
+
+(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=176796222526551";
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+jQuery(document).ready(function($){  
+  $("video").prop("volume", 0.1);      
+});
+
+video_count =1;
+videoPlayer = document.getElementById("homevideo");
+
+function run(){
+        video_count++;
+        console.log("run tripped");
+        if (video_count == 4) video_count = 1;
+        //var nextVideo = "video"+video_count+".mp4";
+        var nextVideo = "/wp-content/themes/danielrevelry/img/cover"+video_count+"-video.mov";
+        videoPlayer.src = nextVideo;
+        //videoPlayer.play();
+   };
+
+
+
+</script>
 
 <?php 
 

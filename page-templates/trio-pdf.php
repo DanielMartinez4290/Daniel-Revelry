@@ -4,7 +4,11 @@
  */
 ?>
 <?php
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+//die('here');
   ob_start();
+  //echo 'Current PHP version: ' . phpversion();
   include("wp-content/themes/danielrevelry/mpdf/mpdf.php");
   $mpdf = new mPDF();
 
@@ -12,6 +16,8 @@
 
   $leftColumnSet = get_post_meta( $post->ID, '_leftColumnSet', true );
   $rightColumnSet = get_post_meta( $post->ID, '_rightColumnSet', true );
+  $requestOnly = get_post_meta( $post->ID, '_requestOnly', true );
+  //die("here");
 ?>
 <div class="setListTitle">Daniel Revelry Trio Request List</div>
 <div class="leftColumn">	
@@ -19,16 +25,20 @@
 </div>
 
 <div class="rightColumn">
-<?= $rightColumnSet; ?>
+	<?= $rightColumnSet; ?>
+	<div class="otherSongsSection">
+		<div class="otherSongsTitle">REQUEST ONLY:</div>
+		<?= $requestOnly; ?>
+	</div>
+	<div class="suggestedDonationSection">
+	SUGGESTED DONATION
+		<ul>
+			<li> $3-$5 or Facebook like </li>
+			<li> facebook.com/danielrevelrytrio </li>
+		</ul>
+	</div>
 </div>
 
-<div class="suggestedDonationSection">
-	SUGGESTED DONATION
-	<ul>
-		<li> $5 or Facebook like </li>
-		<li> facebook.com/danielrevelrytrio </li>
-	</ul>
-</div>
 <footer>
   danielrevelry.com/trio
 </footer>
@@ -49,14 +59,6 @@ exit;
 /*
 <div class="otherSongsSection">
 	<div class="otherSongsTitle">OTHER SONGS:</div>
-	41.) Fire - Daniel Revelry Trio <br>
-	42.) Little Wing - Jimi Hendrix <br>
-	43.) Wonderwall - Oasis<br>
-	44.) Sweet Caroline - Neil Diamond<br>
-	45.) Drift Away - Uncle Kracker<br>
-	46.) Wagon Wheel - Old Crow Medicine Show<br>
-	47.) Friends In Low Places - Garth Brooks<br>
-	48.) Santeria - Sublime<br>
 	49.) Cliffs of Dover - Eric Johnson<br>
 	50.) I Wanna Be Sedated - The Ramones<br>
 </div>

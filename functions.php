@@ -23,11 +23,15 @@ function danielrevelry_enqueue_scripts() {
     wp_register_script( 'flex_js', get_template_directory_uri() .'/js/flex.js');    
     wp_enqueue_script( 'flex_js', get_template_directory_uri() .'/js/flex.js',array('jquery'));
 
-    wp_register_script( 'bootstrap_js', get_template_directory_uri() .'/js/bootstrap.min.js');    
-    wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() .'/js/bootstrap.min.js',array('jquery'));
+    //wp_register_script( 'bootstrap_js', get_template_directory_uri() .'/js/bootstrap.min.js');    
+    //wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() .'/js/bootstrap.min.js',array('jquery'));
+    wp_register_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js');    
+    wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js',array('jquery'));
 
     wp_enqueue_style( 'flexslider_style',  get_template_directory_uri() .'/css/flexslider.css' );
-    wp_enqueue_style( 'bootstrap',  get_template_directory_uri() .'/css/bootstrap.min.css' );
+    //wp_enqueue_style( 'bootstrap',  get_template_directory_uri() .'/css/bootstrap.min.css' );
+    wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css' );
+    
 }
 
 //Register Nav Menus
@@ -84,9 +88,11 @@ function danielrevelry_register_meta_boxes() {
 function danielrevelry_setList($post){
   $leftColumnSet = get_post_meta( $post->ID, '_leftColumnSet', true );
   $rightColumnSet = get_post_meta( $post->ID, '_rightColumnSet', true );
+  $requestOnly = get_post_meta( $post->ID, '_requestOnly', true );
   ?>
   <p>Left Column: <textarea style="width:300px;height:480px" class="setListInput" name="leftColumnSet" /><?= esc_attr( $leftColumnSet ); ?></textarea></p>
-  <p>Right Column: <textarea style="width:300px;height:480px" class="setListInput" name="rightColumnSet"/><?= esc_attr( $rightColumnSet ); ?></textarea></p>
+  <p>Right Column: <textarea style="width:300px;height:280px" class="setListInput" name="rightColumnSet"/><?= esc_attr( $rightColumnSet ); ?></textarea></p>
+  <p>Request Only: <textarea style="width:300px;height:280px" class="setListInput" name="requestOnly"/><?= esc_attr( $requestOnly ); ?></textarea></p>
   <?php
 }
 //Save Setlist
@@ -98,6 +104,10 @@ function danielrevelry_save_meta( $post_id ) {
 
     if ( isset( $_POST['rightColumnSet'] ) ) {
         update_post_meta( $post_id, '_rightColumnSet', $_POST['rightColumnSet'] ); 
+    }
+
+    if ( isset( $_POST['requestOnly'] ) ) {
+        update_post_meta( $post_id, '_requestOnly', $_POST['requestOnly'] ); 
     }
 
 }

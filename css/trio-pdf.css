@@ -1,20 +1,32 @@
+body,html{
+	line-height: 20px !important;
+}
 .setListTitle{
 	font-size: 33px;
 	text-align: center;
-	padding-bottom:30px;
+	padding-top:0 !important;
+	padding-bottom:17px;
 	font-weight: bold;
 }
 
 .leftColumn, .rightColumn{
 	float:left;
+	font-size: 15px;
+	line-height: 28px !important;
+}
+.leftColumn{
+	width:48%;
+	margin-right:2%;
+	line-height: 24px;
+}
+.rightColumn{
 	width:50%;
-	font-size: 16px;
-	line-height: 28px;
 }
 .otherSongsSection{
-	font-size: 16px;
+	font-size: 15px;
 	line-height:28px;
-	margin-top:20px;
+	margin-top:12px;
+	line-height: 28px;
 }
 .otherSongsTitle{
 	font-weight:bold;
@@ -23,12 +35,12 @@
 
 .suggestedDonationSection{
 	font-weight:bold;
-	margin-top:30px;
+	margin-top:20px;
 	font-size: 18px;
 }
 footer{
 	text-align:center;
-	margin-top:100px;
 	font-weight:700;
+	margin-top:5px;
 	font-size:30px;
 }

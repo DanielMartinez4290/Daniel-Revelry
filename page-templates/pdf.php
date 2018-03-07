@@ -99,8 +99,7 @@ function PutLink($URL, $txt)
 
 $dash = utf8_encode("-");
 
-$html = 'Daniel Revelry Trio Set List<br>
-1.) Brown Eyed Girl '.$dash.' Van Morrison<br>
+$html = '1.) Brown Eyed Girl '.$dash.' Van Morrison<br>
 2.) Drift Away '.$dash.' Uncle Kracker<br>
 3.) Voodoo Child '.$dash.' Jimi Hendrix<br>
 4.) Pride and Joy '.$dash.' Stevie Ray Vaughan<br>
@@ -127,31 +126,26 @@ $html = 'Daniel Revelry Trio Set List<br>
 25.) Under The Bridge '.$dash.' Red Hot Chili Peppers<br>
 26.) Stranglehold '.$dash.' Ted Nugent<br>
 27.) Sweet Caroline '.$dash.' Neil Diamond<br>
-28.) Purple Rain / Under The Bridge '.$dash.' Prince / RHCP<br>
+28.) Purple Rain '.$dash.' Prince<br>
 29.) Folsom Prison Blues '.$dash.' Johnny Cash<br>
 30.) Wagon Wheel '.$dash.' Old Crow Medicine Show<br>
 31.) Friends In Low Places '.$dash.' Garth Brooks<br>
 32.) Caress Me Down '.$dash.' Sublime<br>
 33.) Hard To Handle '.$dash.' The Black Crowes<br>
 34.) Santeria '.$dash.' Sublime<br>
-35.) I Wanna Be Sedated '.$dash.' The Ramones<br>
+35.) Wonderwall '.$dash.' Oasis<br>
 36.) Down '.$dash.' 311<br>
 37.) In Da Club '.$dash.' 50 Cent<br>
 38.) Aeroplane '.$dash.' Red Hot Chili Peppers<br>
 39.) I Want You To Want Me '.$dash.' Cheap Trick<br>
-40.) Doin Time '.$dash.' Sublime<br><br>
-OTHER SONGS:<br>
-1.) Fire '.$dash.' Daniel Revelry Trio <br>
-2.) Whiskey Train '.$dash.' Daniel Revelry Trio <br>
-3.) Wonderwall '.$dash.' Oasis<br>
+40.) Doin Time '.$dash.' Sublime<br>
 ';
 
 $pdf = new PDF();
 // First page
-$pdf->SetTitle('Daniel Revelry Trio Set List');
+
 $pdf->AddPage();
-$pdf->SetFont('Arial','',12);
-$pdf->SetLeftMargin(5);
+$pdf->SetFont('Arial','',14);
 //$pdf->Write(5,"To find out what's new in this tutorial, click ");
 $pdf->WriteHTML($html);
 //$pdf->SetFont('','U');

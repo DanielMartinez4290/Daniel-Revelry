@@ -111,7 +111,10 @@ header{
 }
 .headerLinks li,.footerLinks li {
   display:inline-block;
+  padding:0;
 }
+
+
 .headerLinks .menu,.footerLinks .menu{
 	padding:0;
 
@@ -281,6 +284,26 @@ header #navBar{
 	padding-top:8px;
 	padding-bottom:8px;
 }
+
+#pageContent h2{
+	margin-left: 30px;
+}
+#pageContent #posts{
+	margin-left:20px;
+}
+
+#pageSidebar #sidebarFeaturedVideo,#pageSidebar #sidebarFacebookPage,#pageSidebar #sidebarUpcomingShows,#pageSidebar #sidebarSocialIcons{
+	padding:0;
+}
+video source{
+	height:20% !important;
+}
+
+.slides video#homeVideo{
+	
+	height:20% !important;
+}
+
 @media only screen and (min-width : 320px) {
 	.headerLinks, .footerLinks{
 		font-size:25px;
@@ -413,6 +436,9 @@ header #navBar{
 	.coversPageText{
 		margin-left:80px;
 		width:330px;
+	}
+	.slides video#homeVideo{
+		
 	}
 	
 
