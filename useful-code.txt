@@ -26,3 +26,15 @@ function run(){
         videoPlayer.src = nextVideo;
         videoPlayer.play();
    };
+
+
+//HTML
+<!--    
+    <div id="sidebarUpcomingShows">
+        <div id="sidebarUpcomingShowsText" class="sidebarText">Upcoming Shows</div>
+        <div id="sidebarUpcomingShowsShows">
+            <?php  //dynamic_sidebar('main'); ?>
+        </div>
+    </div>
+-->    
+

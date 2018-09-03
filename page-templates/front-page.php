@@ -22,13 +22,13 @@ get_header();
         <div class="homeHeader">
           <h4>Originals</h4>
         </div>
-        <iframe height="370" src="<?= $options['gypsy_soul_url']; ?>" frameborder="0" allowfullscreen></iframe>
+        <iframe height="370" width="97%" src="<?= $options['gypsy_soul_url']; ?>"  allowfullscreen></iframe>
       </div>
       <div class="mainVideo2" class="col-xs-12 col-sm-6">
         <div class="homeHeader">
           <h4>Covers</h4>
         </div>
-        <iframe height="370" src="<?= $options['pride_and_joy_url']; ?>" frameborder="0" allowfullscreen></iframe>
+        <iframe height="370" width="99%" src="<?= $options['pride_and_joy_url']; ?>" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
@@ -37,7 +37,7 @@ get_header();
         <div class="homeHeader">
           <h4>Featured Video</h4>
         </div>
-        <iframe height="370" src="<?= $options['voodoo_child_url']; ?>" frameborder="0" allowfullscreen></iframe>
+        <iframe height="370" width="99%" src="<?= $options['voodoo_child_url']; ?>" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="mainVideo2 recordings" class="col-xs-12 col-sm-6">
         <div class="homeHeader">

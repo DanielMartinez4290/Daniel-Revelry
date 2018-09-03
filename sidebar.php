@@ -3,26 +3,18 @@
 ?>
 <div id="sidebarContent">
 	<div id="sidebarFeaturedVideo">
-		<div id="sidebarFeaturedVideoText" class="sidebarText">Featured Video</div>
+		<h4>Featured Video</h4>
 		<div id="sidebarFeaturedVideoVideo">
-			<iframe width="270" height="321" src="<?= $options['voodoo_child_url']; ?>" frameborder="0" allowfullscreen></iframe>
+		<iframe width="270" height="321" src="<?= $options['voodoo_child_url']; ?>" frameborder="0" allowfullscreen></iframe>
 		</div>
-	</div>
-	
-	<div id="sidebarFacebookPage">
-		<div id="sidebarFacebookText" class="sidebarText">Facebook Page</div>
-		<div id="sidebarFacebookPicture">
-			<a href="https://www.facebook.com/danielrevelry" target="_blank"><img src="<?php echo home_url('/wp-content/themes/danielrevelry/img/profile-pic.jpg') ?>"  width="270" /></a>
-		</div>
-	</div>
 
-	<div id="sidebarUpcomingShows">
-		<div id="sidebarUpcomingShowsText" class="sidebarText">Upcoming Shows</div>
-		<div id="sidebarUpcomingShowsShows">
-			<?php  dynamic_sidebar('main'); ?>
-		</div>
 	</div>
-
+	<section id="sidebarRecordings">
+		  <h4>Recordings</h4>
+		  <section id="sidebarAudio">
+		  	<?php echo do_shortcode('[wonderplugin_audio id="1"]'); ?>  	
+		  </section>
+    </section>
 	<div id="sidebarSocialIcons">
 		<a href="https://www.facebook.com/danielrevelry"><div id="sidebarSocialFB">
 				<i class="fa fa-facebook-official fa-2x"></i>
