@@ -9,6 +9,9 @@ get_header();
 .headerLinks{
     display:none;
 }
+audio{
+    width:100%;
+}
 </style>
 <div id="main" class="backgroundbrown page">
     

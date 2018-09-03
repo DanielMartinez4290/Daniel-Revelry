@@ -5,7 +5,14 @@
 get_header(); 
 
 ?>
-
+<style>
+.headerLinks{
+    display:none;
+}
+audio{
+    width:100%;
+}
+</style>
 <div id="main" class="backgroundbrown page container">
     
     <div class="fullContent col-xs-12 col-sm-8">
@@ -13,6 +20,12 @@ get_header();
         <div class="title">
             Gypsy Soul
         </div>
+        <audio controls>
+          <source src="horse.ogg" type="audio/ogg">
+
+          <source src="<?= home_url('/wp-content/themes/danielrevelry/songs/gypsy-soul.mp3'); ?>" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
         <br>
         <?php
           $options = get_option( 'danielrevelry_options' ); 

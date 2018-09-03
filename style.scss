@@ -1,0 +1,525 @@
+/*
+Theme Name: Daniel Revelry
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Daniel Martinez
+Author URI: danielrevelry.com
+Description: Wordpress theme for Daniel Revelry
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+$layoutColor:black;
+$textColor:white;
+$textFont:'readyToRide';
+
+html{
+	margin-top: 0 !important;
+}
+body{
+	background-color:$layoutColor;
+}
+@font-face {
+    font-family: 'readyToRide';
+    src: url('fonts/ReadytoRide.ttf');
+}
+header, footer{
+	background-color:$layoutColor;
+	height:59px;
+	font-family:'readyToRide';
+	border:1px solid white;
+}
+header a, footer a{
+	color:$textColor;
+}
+header a:hover, footer a:hover{
+	color:$textColor;
+	text-decoration: none;
+}
+header h1, footer h1{
+	font-size:45px;
+	padding:20px 0 0 0;
+	letter-spacing: 5px;
+}
+.homeHeader {
+	border:1px solid white;
+}
+.homeHeader h4 {
+	color:white;
+	font-size:28px;
+}
+.col-sm-6 {
+	max-width:100% !important;
+}
+.col-xs-12 {
+	width:50%;
+}
+#audioPlayer{
+	color:$textColor;
+	border:1px solid white;
+	height:360px;
+}
+#homeAudio {
+	border:1px solid white;
+	height:320px;
+}
+
+/* Audio Player Styles */
+.amazingaudioplayer-image {
+	background-image:url('/wp-content/themes/danielrevelry/img/revelry-logo.jpg');
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#homeAudio a[href^="http://www.wonderplugin.com/wordpress-audio-player/"] {
+	display:none !important;
+	z-index:0;
+	color:black !important;
+}
+.homeContent{
+	border:1px solid white;
+	padding-bottom:10px;
+}
+.col-xs-12 {
+	width:100%;
+}
+.headerLinks li,.footerLinks li {
+  display:inline-block;
+  width:auto;
+  padding:0;
+}
+
+header #navBar{
+	padding:0;
+	position:fixed;
+	top:0;
+	z-index:1000;
+	height:59px;
+	border:1px solid white;
+} 
+.headerLinks{
+	background-color:$layoutColor;
+	color:$textColor;
+	text-align:center;
+	font-weight:700;
+	width:100%;
+	height: 58px;
+	overflow:hidden;
+	font-size:32px;
+	line-height:30px;
+	padding-top:16px;
+	letter-spacing: 4px;
+	border-right:1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.headerLinks ul li:nth-child(2) {
+	padding-left:8px;
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width : 768px) {
+	.col-xs-12 {
+		width:50%;
+	}
+	.headerLinks,.footerLinks{
+		width:477px;
+		margin-left:86px;
+		font-size:34px;
+		height:auto;
+		border:none;
+	}
+	header #navBar {
+		border:none;
+		height:56px;
+	}
+
+	.headerLinks ul li:nth-child(2) {
+		padding-left:0;
+	}
+}
+
+
+/* Old Code */
+#mainPic{
+	width:100%;
+	padding:0;
+	border:1px solid white;
+	border-top:none;
+}
+.flexslider{
+	border:5px solid black;
+}
+.container{
+	max-width: 965px;
+	padding: 0;
+}
+.navbar-default{
+	background-color: transparent;
+}
+.navbar-nav{
+	margin:0;
+	padding:0;
+}
+.mainVideo1, .mainVideo2,#sidebarFeaturedVideo,#sidebarFacebookPage,#sidebarUpcomingShows,#sidebarSocialIcons{
+	text-align: center;
+	padding-top:14px;
+	padding-right:19px;
+	padding-left:19px;
+}
+
+.mainVideo1 iframe, .mainVideo2 iframe,#sidebarFeaturedVideoVideo iframe{
+	width:100%;
+	height:320px;
+	border:1px solid white;
+}
+#sidebarFeaturedVideoVideo iframe{
+		height:370px;
+}
+ #sidebarFacebookPicture img{
+ 	max-width: 406px;
+	width:100%;
+ }
+
+#bs-example-navbar-collapse-1, .container-fluid{
+	padding: 0;
+	border:0;
+}
+
+.footerInd{
+	color:black;
+	margin-left:4px;
+}
+
+.headerLinks ul,.footerLinks ul {
+  list-style-type: none;
+}
+
+
+
+.headerLinks .menu,.footerLinks .menu{
+	padding:0;
+
+}
+#headerLogo{
+	padding:0;
+	display:none;
+}
+
+.navbar-header{
+	padding-left:10px;
+}
+
+.flexslider{
+	margin:0;
+}
+.originalsHeader, .coversHeader, .featuredVideoHeader,.facebookPageHeader,.upcomingShowsHeader{
+	font-family: 'readyToRide';
+	font-size:39px;
+	line-height: 42px;
+	background-color:#ebc9a4;
+	margin:auto;
+	height:46px;
+}
+.col-xs-12{
+	padding:0;
+}
+.originalsText,.coversText,.featuredVideoText,.facebookPageText{
+  float:left;
+  padding-top:5px;
+  width:100%;
+  text-align: center;
+}
+.leftTriangle,.rightTriangle{
+	display:none;
+	height:46px;
+	width:35px;
+	background-color: transparent;
+	float:left;
+}
+#footer{
+   margin:auto;
+   background-color:#bd9265;
+   height:60px;
+
+
+}
+.footerBrand{
+	display:none;
+}
+.footerLinks{
+	background-color:#ebc9a4;
+	font-family: 'readyToRide';
+	font-weight:700;
+	margin-top:12px;
+	width:100%;
+	overflow:hidden;
+	font-size:32px;
+	line-height:30px;
+	padding-top:7px;
+	
+}
+.title{
+	margin-left:36px;
+	margin-top:24px;
+	font-size:34px;
+	font-family:'Open Sans Condensed',sans-serif;
+	font-weight:700;
+}
+#main{
+	min-height: 1375px;
+	height:auto;
+	clear:both;
+	background-image:url('/wp-content/themes/danielrevelry/img/MainContentBackground965.jpg');
+}
+#mainContainer{
+	width:100%;
+	min-height:390px;
+}
+#mainPicture{
+	background-image:url('/wp-content/themes/danielrevelry/img/bioPic.jpg');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin:auto;
+	height:300px;
+	width:230px;
+}
+#bio{
+	width:330px;
+	margin:auto;
+}
+.videos{
+	width:370px;
+	margin:auto;
+}
+.videos iframe{
+	width:100%;
+	height:320px;
+}
+.coversPageText{
+	margin:auto;
+	width:330px;
+}
+
+.sidebarText{
+	background-color:#ebc9a4;
+	font-family:'readyToRide';
+	font-size:36px;
+	line-height: 30px;
+	padding-top:10px;
+	margin:auto;
+}
+#sidebarUpcomingShowsShows{
+	background-color:#bd9265;
+	margin:auto;
+}
+#sidebarSocialFB{
+	float:left;
+	color:black;
+}
+#sidebarSocialYT{
+	float:left;
+	margin-left:44px;
+	color:black;
+}
+#sidebarSocialIcons{
+	height:40px;
+	width:139px;
+	margin:auto;
+}
+#fbLikeButton{
+	position:absolute;
+	top:200px;
+	left:200px;
+}
+.originalLyrics{
+	text-align:center;
+	padding-top:10px;
+}
+.originalVideo{
+	text-align:center;
+	width:90%;
+	margin:auto;
+}
+.originalTitle{
+	font-size:25px;
+	font-weight:700;
+}
+
+.setListInput{
+	width:300px;
+	height:400px;
+}
+#sidebarUpcomingShowsShows{
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+#pageContent h2{
+	margin-left: 30px;
+}
+#pageContent #posts{
+	margin-left:20px;
+}
+
+#pageSidebar #sidebarFeaturedVideo,#pageSidebar #sidebarFacebookPage,#pageSidebar #sidebarUpcomingShows,#pageSidebar #sidebarSocialIcons{
+	padding:0;
+}
+video source{
+	height:20% !important;
+}
+
+.slides video#homeVideo{
+	
+	height:20% !important;
+}
+
+@media only screen and (min-width : 320px) {
+	.headerLinks, .footerLinks{
+		font-size:25px;
+	}
+	
+}
+@media only screen and (min-width : 480px) {
+	#fbLikeButton{
+		left:310px;
+	}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width : 768px) {
+	#sidebarFeaturedVideoVideo iframe{
+		height:334px;
+	}
+	header #navBar{
+		position:static;
+	}   
+	#fbLikeButton{
+		left:165px;
+	}
+	#sidebarSocialYT{
+		margin-left:4px;
+	}
+	#sidebarSocialIcons{
+		margin:0;
+	}
+	.sidebarText, #sidebarUpcomingShowsShows{
+		width:100%;
+	}
+	.footerInd{
+		margin-left:0;
+	}
+
+	#headerLogo{
+		display:block;
+	}
+	/*
+	#headerDanielRevelry{
+		padding: 0;
+	}
+	*/
+	#navBar{
+		padding:0;
+	}
+	
+	.headerLinks{
+		width:423px;
+		font-size:29px;
+	}
+
+	.footerLinks{
+		font-size:29px;
+		width:423px;
+		margin-left:15px;
+	}
+	.headerInd{
+		margin-left:0;
+		padding-left:10px;
+		padding-right:0px;
+	}
+	.headerInd a{
+		margin-left:10px;
+	}
+	.bioHome{
+		padding-left:19px;
+	}
+	.originalsHeader, .coversHeader, .featuredVideoHeader, .facebookPageHeader, .upcomingShowsHeader{
+		width:100%;
+	}
+	.footerBrand{
+		display:block;
+	}
+	#footer{
+		width:750px;
+	}
+	
+	#main{
+		min-height: 905px;
+	}
+	#bio{
+		width:340px;
+	}
+	.videos{
+		width:300px;
+	}
+
+	
+}
+
+@media only screen and (min-width : 992px) {
+	#sidebarFacebookPicture img{
+ 	  max-width: 400px;
+    }
+	#sidebarFeaturedVideoVideo iframe{
+		height:400px;
+   } 
+	#fbLikeButton{
+		left:220px;
+	}
+	
+	.footerLinks{
+		margin-top:13px;
+	}
+	.originalsHeader, .coversHeader, .featuredVideoHeader, .facebookPageHeader, .upcomingShowsHeader{
+		width:400px;
+	}
+	#footer{
+		width:965px;
+		height:60px;
+	}
+	#bio{
+		width:440px;
+	}
+	.videos{
+		width:480px;
+	}
+	.coversPageText{
+		margin-left:80px;
+		width:330px;
+	}
+	.slides video#homeVideo{
+		
+	}
+	
+
+}
+@media screen and (max-device-width: 480px){
+  
+  .headerInd,.footerInd{
+  	margin-left:0;
+  	padding-right:0;
+  	padding-left:9px;
+  }
+  #fbLikeButton{
+	display:none;
+  }
+
+}
+
+	

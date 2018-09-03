@@ -8,8 +8,30 @@
 	<link rel="stylesheet" href="<?= bloginfo('stylesheet_url'); ?>" />
 	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERH/ERER/xEREf8RERH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACPpqiZERER/xEREf8RERH/ERER/4+mqJkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACPpqjgERER/xEREf8RERH/ERER/xEREf8RERH/j6ao/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI+mqP9NYWb/ERER/xEREf+Ppqj/iqCj/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4P0D8j6ao/xEREf8RERH/j6ao/4+mqP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE1hZv+Ppqj/ERER/xEREf8RERH/ERER/xEREf8RERH/j6ao/01hZv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAISQkBBEREf8RERH/ERER/xEREf8RERH/ERER/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACPpqj/TWFm/xEREf8RERH/TWFm/2uAhP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERER/ztDQ/sRERH/ERER/xEREf8RERH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABNYWb/j6aomREREf8RERH/ERER/xEREf8RERH/ERER/4+mqJlSZmv/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERH/ERER/xEREf8RERH/ERER/xcYGP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACPpqj/TWFm/46lp/8RERH/ERER/4uho/9NYWb/j6ao/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE1hZv9NYWb/JSgp/xEREf8RERH/ERER/xEREf8RERH/ERER/xEREf9NYWb/TWFm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREf8RERH/ERER/xEREf8RERH/ERER/xEREf8RERH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREf8RERH/ERER/xEREf+HnZ8zAAAAAIednxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/D8AAPgfAADwDwAA+B8AAPgfAADgBwAA+B8AAPgfAAD4HwAA4AcAAPgfAADwDwAAwAMAAPAPAAD8PwAA//8AAA==" rel="icon" type="image/x-icon" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+	<!--
+	<link rel="stylesheet" href="/wp-content/themes/Daniel-Revelry/css/bootstrap.min.css" />
+-->
+	<!--
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+-->
 	 <base href="/">
+	 <style>
+	 	.footerNav{
+	 		padding:0;
+	 	}
+	 	.navbar-nav{
+	 		margin:0;
+	 	}
+	 	header #navBar{
+	 		left:0;
+	 	}
+	 	.navbar-default{
+	 		width:100%;
+	 	}
+	 	.menu-item-51{
+	 		padding-left:12px !important;
+	 	}
+	 </style>
 </head>
 
 <div class="container">
@@ -22,7 +44,9 @@
 	          <div class="navbar-header">
 	          	
 	        	<div class="col-xs-7 col-sm-12">
-	            	<a class="navbar-brand" href="/" id="headerDanielRevelry"><img src="<?= home_url('/wp-content/themes/danielrevelry/img/DanielRevelryLogo-compressor.png') ?>" /></a>
+	            	<a class="navbar-brand" href="/">
+	            		<h1>Daniel Revelry</h1>
+	            	</a>
 	        	</div>
 	        	
 	          </div>

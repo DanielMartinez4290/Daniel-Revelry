@@ -11,7 +11,7 @@ get_header();
     	<div class="title">
             ORIGINALS
         </div>
-<!--
+
     	<div id="mainPlayer">
 			<div id="playerContainer">
 		        <div class="player gradient">
@@ -58,7 +58,7 @@ get_header();
 		        </div>
             </div>
 		</div>
-	-->
+	
 	</br>
 	<div class="videos">
 		<?php

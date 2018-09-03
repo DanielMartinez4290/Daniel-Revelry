@@ -1,4 +1,4 @@
-$(window).load(function() {
+jQuery(document).ready(function($){  
 
     //container = $('.container');
     //cover = $('.cover');
@@ -12,20 +12,22 @@ $(window).load(function() {
     //mute = $('#mute');
     //muted = $('#muted');
     //close = $('#close');
-    song1 = new Audio('music/track1.ogg','http://danielrevelry.com/wp-content/uploads/2015/12/danteyolo-12_6_15-3.19-PM.m4a');
-    song2 = new Audio('music/track1.ogg','http://danielrevelry.com/wp-content/uploads/2015/12/Gypsy-Soul.m4a');
+    //song1 = new Audio('music/track1.ogg','http://danielrevelry.com/wp-content/uploads/2015/12/danteyolo-12_6_15-3.19-PM.m4a');
+    //song2 = new Audio('music/track1.ogg','http://danielrevelry.com/wp-content/uploads/2015/12/Gypsy-Soul.m4a');
+    song1 = new Audio('music/track1.ogg','/wp-content/themes/danielrevelry/songs/gypsy-soul.mp3');
+    song1 = new Audio('music/track1.ogg','/wp-content/themes/danielrevelry/songs/FelizNavidad.mp3');
     duration = song1.duration;
 
     if (song1.canPlayType('audio/mpeg;')) {
-        song1.type= 'audio/mpeg';
-        song1.src= 'http://danielrevelry.com/wp-content/uploads/2015/12/danteyolo-12_6_15-3.19-PM.m4a';
+        song1.type= 'audio/mp3';
+        song1.src= '/wp-content/themes/danielrevelry/songs/gypsy-soul.mp3';
     } else {
         song1.type= 'audio/ogg';
         song1.src= 'music/track1.ogg';
     }
-    if (song2.canPlayType('audio/mpeg;')) {
-        song2.type= 'audio/mpeg';
-        song2.src= 'http://danielrevelry.com/wp-content/uploads/2015/12/Gypsy-Soul.m4a';
+    if (song2.canPlayType('audio/mp3;')) {
+        song2.type= 'audio/mp3';
+        song2.src= '/wp-content/themes/danielrevelry/songs/gypsy-soul.mp3';
     } else {
         song2.type= 'audio/ogg';
         song2.src= 'music/track1.ogg';
