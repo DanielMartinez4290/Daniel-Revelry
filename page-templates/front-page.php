@@ -33,13 +33,13 @@ get_header();
     </div>
 
     <div class="col-xs-12">
-      <div class="mainVideo1" class="col-xs-12 col-sm-6">
+      <div class="mainVideo1 rightVideos" class="col-xs-12 col-sm-6">
         <div class="homeHeader">
           <h4>Featured Video</h4>
         </div>
         <iframe height="370" width="99%" src="<?= $options['voodoo_child_url']; ?>" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="mainVideo2 recordings" class="col-xs-12 col-sm-6">
+      <div class="mainVideo2 recordings rightVideos" class="col-xs-12 col-sm-6">
         <div class="homeHeader">
           <h4>Recordings</h4>
         </div>

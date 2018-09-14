@@ -19,16 +19,19 @@ body {
   background-color: black; }
 
 @font-face {
-  font-family: 'readyToRide';
+  font-family: 'ReadyToRide';
   src: url("fonts/ReadytoRide.ttf"); }
+@font-face {
+  font-family: 'Rockwild';
+  src: url("fonts/Rockwild.otf"); }
 header, footer {
   background-color: black;
   height: 59px;
-  font-family: 'readyToRide';
   border: 1px solid white; }
 
-header a, footer a {
-  color: white; }
+header a.navbar-brand, footer a.navbar-brand {
+  color: white !important;
+  padding-top: 9px; }
 
 header a:hover, footer a:hover {
   color: white;
@@ -36,8 +39,10 @@ header a:hover, footer a:hover {
 
 header h1, footer h1 {
   font-size: 45px;
-  padding: 20px 0 0 0;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  margin: 0;
+  padding-top: 5px;
+  font-family: "ReadyToRide"; }
 
 .homeHeader {
   border: 1px solid white;
@@ -45,7 +50,11 @@ header h1, footer h1 {
 
 .homeHeader h4 {
   color: white;
-  font-size: 28px; }
+  font-size: 30px;
+  font-family: "Rockwild";
+  margin: 0;
+  padding: 4px 0 0 0;
+  letter-spacing: 4px; }
 
 .col-sm-6 {
   max-width: 100% !important; }
@@ -75,16 +84,11 @@ header h1, footer h1 {
   color: black !important; }
 
 .homeContent {
-  border: 1px solid white;
+  border-top: 1px solid white;
   padding-bottom: 10px; }
 
 .col-xs-12 {
   width: 100%; }
-
-.headerLinks li, .footerLinks li {
-  display: inline-block;
-  width: auto;
-  padding: 0; }
 
 header #navBar {
   padding: 0;
@@ -94,56 +98,81 @@ header #navBar {
   height: 59px;
   border: 1px solid white; }
 
-.headerLinks {
+/* Header and Footer Links */
+.headerLinks, .footerLinks {
   background-color: black;
   color: white;
   text-align: center;
-  font-weight: 700;
   width: 100%;
   height: 58px;
   overflow: hidden;
-  font-size: 32px;
+  padding-top: 12px;
   line-height: 30px;
-  padding-top: 16px;
   letter-spacing: 4px;
   border-right: 1px solid white;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+  font-size: 17px; }
 
-.headerLinks ul li:nth-child(2) {
-  padding-left: 8px; }
+.headerLinks li, .footerLinks li {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  margin-left: 6px; }
 
-#sidebarFeaturedVideo {
-  margin: 15px 0 15px 0; }
+.headerLinks li a, .footerLinks li a {
+  color: white;
+  font-family: "Rockwild"; }
+
+/* Individual Page Code */
+#page footer {
+  float: left;
+  width: 104%; }
+
+#page footer .headerLinks {
+  font-size: 16px;
+  padding-left: 6px; }
 
 #pageContent h1 {
   color: white;
   font-size: 33px;
   padding-left: 18px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin: 5px 0 10px 0;
+  font-family: "Rockwild";
+  letter-spacing: 3px; }
+
+#pageContent h3 {
+  font-family: "Rockwild";
+  color: white;
+  padding-left: 13px; }
+
+#pageContent p {
+  color: white;
+  padding: 0 13px 0 13px; }
+
+#sidebarFeaturedVideo {
+  margin: 15px 0 15px 0; }
 
 #sidebarContent h4 {
   color: white;
   border: 1px solid white;
   text-align: center;
-  padding: 10px 0 10px 0;
-  margin-bottom: 0; }
+  padding: 10px 0 5px 0;
+  margin-bottom: 0;
+  font-family: "Rockwild";
+  letter-spacing: 3px;
+  font-size: 24px; }
 
 #sidebarAudio {
   border: 1px solid white; }
-
-.title {
-  margin-left: 36px;
-  margin-top: 24px;
-  font-size: 34px;
-  font-family: 'Open Sans Condensed',sans-serif;
-  font-weight: 700;
-  color: white; }
 
 .container {
   max-width: 965px;
   padding: 0;
   border: 1px solid white;
-  overflow: hidden; }
+  overflow: hidden;
+  border-top: none;
+  border-bottom: none; }
 
 #pageContent {
   float: left; }
@@ -154,32 +183,78 @@ header #navBar {
 .postSection {
   border: 1px solid white; }
 
+.originalsHome {
+  padding-left: 2px !important; }
+
+.mainVideo1, .mainVideo2 {
+  text-align: center;
+  padding-top: 14px;
+  padding-left: 29px;
+  padding-right: 29px; }
+
+.rightVideos {
+  padding-right: 29px; }
+
+#mainPic img {
+  position: relative;
+  left: -5px; }
+
+footer #navBar {
+  padding-top: 1px; }
+
+.headerLinks {
+  border-right: none; }
+
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
+  footer .headerLinks {
+    padding: 0; }
+
+  .headerLinks li, .footerLinks li {
+    margin-left: 4px; }
+
+  .originalsHome {
+    padding-left: 13px !important; }
+
+  #mainPic img {
+    position: relative;
+    left: -12px; }
+
   .col-xs-12 {
     width: 50%; }
 
   .headerLinks, .footerLinks {
-    width: 477px;
-    margin-left: 100px;
-    font-size: 34px;
+    /*
+    margin-left:50px;
+    */
+    font-size: 22px;
     height: auto;
-    border: none; }
+    border: none;
+    width: 107%; }
 
   header #navBar {
     border: none;
     height: 56px; }
 
-  .headerLinks ul li:nth-child(2) {
-    padding-left: 0; }
-
   #pageContent #posts {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+
+  .headerLinks li, .footerLinks li {
+    display: inline-block;
+    width: auto; }
+
+  .headerLinks ul li:nth-child(3) {
+    padding-left: 20px !important; } }
+@media only screen and (min-width: 992px) {
+  .headerLinks, .footerLinks {
+    /*
+    margin-left:140px;
+    */
+    font-size: 30px; } }
 /* Old Code */
 #mainPic {
   width: 100%;
   padding: 0;
-  border: 1px solid white;
   border-top: none; }
 
 .flexslider {
@@ -191,12 +266,6 @@ header #navBar {
 .navbar-nav {
   margin: 0;
   padding: 0; }
-
-.mainVideo1, .mainVideo2, #sidebarFeaturedVideo, #sidebarFacebookPage, #sidebarUpcomingShows, #sidebarSocialIcons {
-  text-align: center;
-  padding-top: 14px;
-  padding-right: 19px;
-  padding-left: 19px; }
 
 .mainVideo1 iframe, .mainVideo2 iframe, #sidebarFeaturedVideoVideo iframe {
   width: 100%;
@@ -251,13 +320,6 @@ header #navBar {
   padding-top: 5px;
   width: 100%;
   text-align: center; }
-
-.leftTriangle, .rightTriangle {
-  display: none;
-  height: 46px;
-  width: 35px;
-  background-color: transparent;
-  float: left; }
 
 #footer {
   margin: auto;
@@ -376,9 +438,14 @@ video source {
 .slides video#homeVideo {
   height: 20% !important; }
 
-@media only screen and (min-width: 320px) {
-  .headerLinks, .footerLinks {
-    font-size: 25px; } }
+/*
+@media only screen and (min-width : 320px) {
+	.headerLinks, .footerLinks{
+		font-size:25px;
+	}
+	
+}
+*/
 @media only screen and (min-width: 480px) {
   #fbLikeButton {
     left: 310px; } }
@@ -415,15 +482,6 @@ video source {
   */
   #navBar {
     padding: 0; }
-
-  .headerLinks {
-    width: 423px;
-    font-size: 29px; }
-
-  .footerLinks {
-    font-size: 29px;
-    width: 423px;
-    margin-left: 15px; }
 
   .headerInd {
     margin-left: 0;

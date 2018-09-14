@@ -29,12 +29,15 @@ function run(){
 
 
 //HTML
-<!--    
-    <div id="sidebarUpcomingShows">
-        <div id="sidebarUpcomingShowsText" class="sidebarText">Upcoming Shows</div>
-        <div id="sidebarUpcomingShowsShows">
-            <?php  //dynamic_sidebar('main'); ?>
-        </div>
+<div id="sidebarUpcomingShows">
+    <div id="sidebarUpcomingShowsText" class="sidebarText">Upcoming Shows</div>
+    <div id="sidebarUpcomingShowsShows">
+        <?php  //dynamic_sidebar('main'); ?>
     </div>
--->    
+</div>
 
+
+//CSS
+.headerLinks ul li:nth-child(2) {
+    padding-left:8px;
+}

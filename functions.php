@@ -2,14 +2,24 @@
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+@ini_set( 'upload_max_size' , '256M' );
 
-add_action( 'init', 'danielrevelry_enqueue_scripts' );
-add_action( 'init', 'danielrevelry_register_header_menus' );
-add_action( 'admin_menu', 'danielrevelry_theme_options_page' );
-add_action('admin_init', 'danielrevelry_admin_init'); 
-add_action( 'widgets_init', 'danielrevelry_widgets_init' );
+/*
+define('WP_MEMORY_LIMIT', '64MB');
+add_filter( 'wp_image_editors', 'change_graphic_lib' );
+
+function change_graphic_lib($array) {
+  return array( 'WP_Image_Editor_GD', 'WP_Image_Editor_Imagick' );
+}
+*/
+
+add_action( 'init',           'danielrevelry_enqueue_scripts' );
+add_action( 'init',           'danielrevelry_register_header_menus' );
+add_action( 'admin_menu',     'danielrevelry_theme_options_page' );
+add_action( 'admin_init',     'danielrevelry_admin_init'); 
+add_action( 'widgets_init',   'danielrevelry_widgets_init' );
 add_action( 'add_meta_boxes', 'danielrevelry_register_meta_boxes' );
-add_action( 'save_post', 'danielrevelry_save_meta' );
+add_action( 'save_post',      'danielrevelry_save_meta' );
 
 add_filter('nav_menu_css_class','danielrevelry_menu_classes',1,3);
 
@@ -23,13 +33,11 @@ function danielrevelry_enqueue_scripts() {
     wp_register_script( 'flex_js', get_template_directory_uri() .'/js/flex.js');    
     wp_enqueue_script( 'flex_js', get_template_directory_uri() .'/js/flex.js',array('jquery'));
 
-    //wp_register_script( 'bootstrap_js', get_template_directory_uri() .'/js/bootstrap.min.js');    
-    //wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() .'/js/bootstrap.min.js',array('jquery'));
+    //Bootstrap CDNS
     wp_register_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js');    
     wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js',array('jquery'));
 
     wp_enqueue_style( 'flexslider_style',  get_template_directory_uri() .'/css/flexslider.css' );
-    //wp_enqueue_style( 'bootstrap',  get_template_directory_uri() .'/css/bootstrap.min.css' );
     wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css' );
     
 }

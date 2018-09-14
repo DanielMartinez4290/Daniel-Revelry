@@ -2,7 +2,7 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           
-	      <div class="col-sm-5" id="headerLogo">
+	      <div class="col-sm-4" id="headerLogo">
 	          <div class="navbar-header">
 	          	
 	        	<div class="col-xs-7 col-sm-12">
@@ -14,7 +14,7 @@
 	          </div>
 	      </div>
 
-			<div class="col-xs-12 col-sm-7" id="navBar">          
+			<div class="col-xs-12 col-sm-8" id="navBar">
 	                  
 	            <ul class="nav navbar-nav navbar-right col-sm-12">
 	            		<div class='headerLinks'>
